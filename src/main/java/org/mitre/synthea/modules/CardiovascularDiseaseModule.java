@@ -63,7 +63,8 @@ public final class CardiovascularDiseaseModule extends Module {
   // estimate cardiovascular risk of developing coronary heart disease (CHD)
   // http://www.nhlbi.nih.gov/health-pro/guidelines/current/cholesterol-guidelines/quick-desk-reference-html/10-year-risk-framingham-table
 
-  // Indices in the array correspond to these age ranges: 20-24, 25-29, 30-34 35-39, 40-44, 45-49,
+  // Indices in the array correspond to these age ranges: 20-24, 25-29, 30-34
+  // 35-39, 40-44, 45-49,
   // 50-54, 55-59, 60-64, 65-69, 70-74, 75-79
   private static final int[] age_chd_m = { -9, -9, -9, -4, 0, 3, 6, 8, 10, 11, 12, 13 };
   private static final int[] age_chd_f = { -7, -7, -7, -3, 0, 3, 6, 8, 10, 12, 14, 16 };
@@ -117,7 +118,8 @@ public final class CardiovascularDiseaseModule extends Module {
 
   private static final int[] hdl_lookup_chd = new int[] { 2, 1, 0, -1 }; // <40, 40-49, 50-59, >60
 
-  // Framingham score system for calculating atrial fibrillation (significant factor for stroke
+  // Framingham score system for calculating atrial fibrillation (significant
+  // factor for stroke
   // risk)
   private static final int[][] age_af = {
       // age ranges: 45-49, 50-54, 55-59, 60-64, 65-69, 70-74, 75-79, 80-84, >84
@@ -198,15 +200,12 @@ public final class CardiovascularDiseaseModule extends Module {
     LOOKUP = new HashMap<>();
     // conditions
     LOOKUP.put("stroke", new Code("SNOMED-CT", "230690007", "Stroke"));
-    LOOKUP.put("natural_causes",
-        new Code("SNOMED-CT", "9855000", "Natural death with unknown cause"));
-    LOOKUP.put("coronary_heart_disease",
-        new Code("SNOMED-CT", "53741008", "Coronary Heart Disease"));
+    LOOKUP.put("natural_causes", new Code("SNOMED-CT", "9855000", "Natural death with unknown cause"));
+    LOOKUP.put("coronary_heart_disease", new Code("SNOMED-CT", "53741008", "Coronary Heart Disease"));
     LOOKUP.put("myocardial_infarction", new Code("SNOMED-CT", "22298006", "Myocardial Infarction"));
     LOOKUP.put("cardiac_arrest", new Code("SNOMED-CT", "410429000", "Cardiac Arrest"));
     LOOKUP.put("atrial_fibrillation", new Code("SNOMED-CT", "49436004", "Atrial Fibrillation"));
-    LOOKUP.put("cardiovascular_disease",
-        new Code("SNOMED-CT", "49601007", "Disorder of cardiovascular system"));
+    LOOKUP.put("cardiovascular_disease", new Code("SNOMED-CT", "49601007", "Disorder of cardiovascular system"));
     LOOKUP.put("history_of_myocardial_infarction",
         new Code("SNOMED-CT", "399211009", "History of myocardial infarction (situation)"));
     LOOKUP.put("history_of_cardiac_arrest",
@@ -214,53 +213,43 @@ public final class CardiovascularDiseaseModule extends Module {
 
     // procedures
     LOOKUP.put("defibrillation", new Code("SNOMED-CT", "429500007", "Monophasic defibrillation"));
-    LOOKUP.put("implant_cardioverter_defib", new Code("SNOMED-CT", "447365002",
-        "Insertion of biventricular implantable cardioverter defibrillator"));
-    LOOKUP.put("catheter_ablation",
-        new Code("SNOMED-CT", "18286008", "Catheter ablation of tissue of heart"));
+    LOOKUP.put("implant_cardioverter_defib",
+        new Code("SNOMED-CT", "447365002", "Insertion of biventricular implantable cardioverter defibrillator"));
+    LOOKUP.put("catheter_ablation", new Code("SNOMED-CT", "18286008", "Catheter ablation of tissue of heart"));
     LOOKUP.put("percutaneous_coronary_intervention",
         new Code("SNOMED-CT", "415070008", "Percutaneous coronary intervention"));
     LOOKUP.put("coronary_artery_bypass_grafting",
         new Code("SNOMED-CT", "232717009", "Coronary artery bypass grafting"));
     LOOKUP.put("mechanical_thrombectomy", new Code("SNOMED-CT", "433112001",
         "Percutaneous mechanical thrombectomy of portal vein using fluoroscopic guidance"));
-    LOOKUP.put("electrical_cardioversion",
-        new Code("SNOMED-CT", "180325003", "Electrical cardioversion"));
-    LOOKUP.put("echocardiogram",
-        new Code("SNOMED-CT", "40701008", "Echocardiography (procedure)"));
+    LOOKUP.put("electrical_cardioversion", new Code("SNOMED-CT", "180325003", "Electrical cardioversion"));
+    LOOKUP.put("echocardiogram", new Code("SNOMED-CT", "40701008", "Echocardiography (procedure)"));
 
     // devices
     LOOKUP.put("defibrillator",
         new Code("SNOMED-CT", "72506001", "Implantable defibrillator, device (physical object)"));
-    LOOKUP.put("stent",
-        new Code("SNOMED-CT", "705643001", "Coronary artery stent (physical object)"));
-    LOOKUP.put("pacemaker",
-        new Code("SNOMED-CT", "706004007", "Implantable cardiac pacemaker (physical object)"));
+    LOOKUP.put("stent", new Code("SNOMED-CT", "705643001", "Coronary artery stent (physical object)"));
+    LOOKUP.put("pacemaker", new Code("SNOMED-CT", "706004007", "Implantable cardiac pacemaker (physical object)"));
 
     // medications
     LOOKUP.put("clopidogrel", new Code("RxNorm", "309362", "Clopidogrel 75 MG Oral Tablet"));
     LOOKUP.put("simvastatin", new Code("RxNorm", "312961", "Simvastatin 20 MG Oral Tablet"));
     LOOKUP.put("amlodipine", new Code("RxNorm", "197361", "Amlodipine 5 MG Oral Tablet"));
-    LOOKUP.put("nitroglycerin",
-        new Code("RxNorm", "705129", "Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray"));
+    LOOKUP.put("nitroglycerin", new Code("RxNorm", "705129", "Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray"));
     LOOKUP.put("atorvastatin", new Code("RxNorm", "259255", "Atorvastatin 80 MG Oral Tablet"));
     LOOKUP.put("captopril", new Code("RxNorm", "833036", "Captopril 25 MG Oral Tablet"));
     LOOKUP.put("warfarin", new Code("RxNorm", "855332", "Warfarin Sodium 5 MG Oral Tablet"));
     LOOKUP.put("verapamil", new Code("RxNorm", "897718", "Verapamil Hydrochloride 40 MG"));
     LOOKUP.put("digoxin", new Code("RxNorm", "197604", "Digoxin 0.125 MG Oral Tablet"));
-    LOOKUP.put("epinephrine",
-        new Code("RxNorm", "1660014", "1 ML Epinephrine 1 MG/ML Injection"));
-    LOOKUP.put("amiodarone",
-        new Code("RxNorm", "834357", "3 ML Amiodarone hydrocholoride 50 MG/ML Prefilled Syringe"));
-    LOOKUP.put("atropine",
-        new Code("RxNorm", "1190795", "Atropine Sulfate 1 MG/ML Injectable Solution"));
+    LOOKUP.put("epinephrine", new Code("RxNorm", "1660014", "1 ML Epinephrine 1 MG/ML Injection"));
+    LOOKUP.put("amiodarone", new Code("RxNorm", "834357", "3 ML Amiodarone hydrocholoride 50 MG/ML Prefilled Syringe"));
+    LOOKUP.put("atropine", new Code("RxNorm", "1190795", "Atropine Sulfate 1 MG/ML Injectable Solution"));
     LOOKUP.put("alteplase", new Code("RxNorm", "1804799", "Alteplase 100 MG Injection"));
 
     // reasons
-    LOOKUP.put("stop_drug",
-        new Code("SNOMED-CT", "182846007", "Dr stopped drug - medical aim achieved"));
-    LOOKUP.put("cardiovascular_improved", new Code("SNOMED-CT", "413757005",
-        "Cardiac status is consistent with or improved from preoperative baseline"));
+    LOOKUP.put("stop_drug", new Code("SNOMED-CT", "182846007", "Dr stopped drug - medical aim achieved"));
+    LOOKUP.put("cardiovascular_improved",
+        new Code("SNOMED-CT", "413757005", "Cardiac status is consistent with or improved from preoperative baseline"));
 
     EMERGENCY_MEDS = new HashMap<>();
     EMERGENCY_MEDS.put("myocardial_infarction",
@@ -272,20 +261,17 @@ public final class CardiovascularDiseaseModule extends Module {
     EMERGENCY_PROCEDURES.put("myocardial_infarction",
         Arrays.asList("percutaneous_coronary_intervention", "coronary_artery_bypass_grafting"));
     EMERGENCY_PROCEDURES.put("stroke", Arrays.asList("mechanical_thrombectomy"));
-    EMERGENCY_PROCEDURES.put("cardiac_arrest",
-        Arrays.asList("implant_cardioverter_defib", "catheter_ablation"));
+    EMERGENCY_PROCEDURES.put("cardiac_arrest", Arrays.asList("implant_cardioverter_defib", "catheter_ablation"));
 
     HISTORY_CONDITIONS = new HashMap<>();
-    HISTORY_CONDITIONS.put("myocardial_infarction",
-        Arrays.asList("history_of_myocardial_infarction"));
+    HISTORY_CONDITIONS.put("myocardial_infarction", Arrays.asList("history_of_myocardial_infarction"));
     HISTORY_CONDITIONS.put("stroke", Arrays.asList());
     HISTORY_CONDITIONS.put("cardiac_arrest", Arrays.asList("history_of_cardiac_arrest"));
   }
 
   private static List<String> filter_meds_by_year(List<String> meds, long time) {
     int year = Utilities.getYear(time);
-    return meds.stream().filter(med -> year >= MEDICATION_AVAILABLE.get(med))
-        .collect(Collectors.toList());
+    return meds.stream().filter(med -> year >= MEDICATION_AVAILABLE.get(med)).collect(Collectors.toList());
   }
 
   ////////////////////
@@ -296,10 +282,11 @@ public final class CardiovascularDiseaseModule extends Module {
   }
 
   /**
-   * Calculates the risk of cardiovascular disease using Framingham points
-   * and look up tables, putting the current risk in a "cardio_risk" attribute.
+   * Calculates the risk of cardiovascular disease using Framingham points and
+   * look up tables, putting the current risk in a "cardio_risk" attribute.
+   * 
    * @param person The patient.
-   * @param time The risk is calculated for the given time.
+   * @param time   The risk is calculated for the given time.
    */
   private static void calculateCardioRisk(Person person, long time) {
     int age = person.ageInYears(time);
@@ -311,12 +298,12 @@ public final class CardiovascularDiseaseModule extends Module {
       return;
     }
 
-    Boolean bpTreated = (Boolean)
-        person.attributes.getOrDefault("blood_pressure_controlled", false);
+    Boolean bpTreated = (Boolean) person.attributes.getOrDefault("blood_pressure_controlled", false);
 
     Double hdl = person.getVitalSign(VitalSign.HDL, time);
 
-    // calculate which index in a lookup array a number corresponds to based on ranges in scoring
+    // calculate which index in a lookup array a number corresponds to based on
+    // ranges in scoring
     int shortAgeRange = bound((age - 20) / 5, 0, 11);
     int longAgeRange = bound((age - 20) / 10, 0, 5);
 
@@ -367,15 +354,15 @@ public final class CardiovascularDiseaseModule extends Module {
       risk = risk_chd_f.get(framinghamPoints);
     }
 
-    person.attributes.put("cardio_risk",
-        Utilities.convertRiskToTimestep(risk, TimeUnit.DAYS.toMillis(3650)));
+    person.attributes.put("cardio_risk", Utilities.convertRiskToTimestep(risk, TimeUnit.DAYS.toMillis(3650)));
   }
 
   /**
    * The patient rolls the probability dice. If their roll is less than their
    * "cardio_risk" attribute, then coronary heart disease begins.
+   * 
    * @param person The patient.
-   * @param time The time.
+   * @param time   The time.
    */
   private static void onsetCoronaryHeartDisease(Person person, long time) {
     if (person.attributes.containsKey("coronary_heart_disease")) {
@@ -391,14 +378,14 @@ public final class CardiovascularDiseaseModule extends Module {
   /**
    * If the patient has "coronary_heart_disease", there is a small chance they
    * will have a cardiac emergency: "myocardial_infarction" or "cardiac_arrest".
+   * 
    * @param person The patient.
-   * @param time The time.
+   * @param time   The time.
    */
   private static void coronaryHeartDiseaseProgression(Person person, long time) {
     // numbers are from appendix:
     // http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1647098/pdf/amjph00262-0029.pdf
-    boolean coronaryHeartDisease = (Boolean) person.attributes
-        .getOrDefault("coronary_heart_disease", false);
+    boolean coronaryHeartDisease = (Boolean) person.attributes.getOrDefault("coronary_heart_disease", false);
 
     if (!coronaryHeartDisease) {
       return;
@@ -415,8 +402,7 @@ public final class CardiovascularDiseaseModule extends Module {
       annualRisk = 0.015;
     }
 
-    double cardiacEventChance = Utilities.convertRiskToTimestep(annualRisk,
-        TimeUnit.DAYS.toMillis(365));
+    double cardiacEventChance = Utilities.convertRiskToTimestep(annualRisk, TimeUnit.DAYS.toMillis(365));
 
     if (person.rand() < cardiacEventChance) {
       String cardiacEvent;
@@ -447,21 +433,22 @@ public final class CardiovascularDiseaseModule extends Module {
   }
 
   /**
-   * If the patient does NOT have "coronary_heart_disease", there is a very small chance
-   * they will have "cardiac_arrest".
+   * If the patient does NOT have "coronary_heart_disease", there is a very small
+   * chance they will have "cardiac_arrest".
+   * 
    * @param person The patient.
-   * @param time The time.
+   * @param time   The time.
    */
   private static void noCoronaryHeartDisease(Person person, long time) {
-    // chance of getting a sudden cardiac arrest without heart disease. (Most probable cardiac event
+    // chance of getting a sudden cardiac arrest without heart disease. (Most
+    // probable cardiac event
     // w/o cause or history)
     if (person.attributes.containsKey("coronary_heart_disease")) {
       return;
     }
 
     double annualRisk = 0.00076;
-    double cardiacEventChance = Utilities.convertRiskToTimestep(annualRisk,
-        TimeUnit.DAYS.toMillis(365));
+    double cardiacEventChance = Utilities.convertRiskToTimestep(annualRisk, TimeUnit.DAYS.toMillis(365));
     if (person.rand() < cardiacEventChance) {
       // Make sure the Emergency Encounter has started...
       Code code = LOOKUP.get("cardiac_arrest");
@@ -473,18 +460,18 @@ public final class CardiovascularDiseaseModule extends Module {
         survivalRate *= 3.0;
       }
       double annualDeathRisk = 1 - survivalRate;
-      if (person.rand() < Utilities.convertRiskToTimestep(annualDeathRisk,
-          TimeUnit.DAYS.toMillis(365))) {
+      if (person.rand() < Utilities.convertRiskToTimestep(annualDeathRisk, TimeUnit.DAYS.toMillis(365))) {
         person.recordDeath(time, LOOKUP.get("cardiac_arrest"));
       }
     }
   }
 
   /**
-   * Depending on gender, BMI, and blood pressure, there is a small risk of
-   * Atrial Fibrillation which is calculated and stored in "atrial_fibrillation_risk".
+   * Depending on gender, BMI, and blood pressure, there is a small risk of Atrial
+   * Fibrillation which is calculated and stored in "atrial_fibrillation_risk".
+   * 
    * @param person The patient.
-   * @param time The time.
+   * @param time   The time.
    */
   private static void calculateAtrialFibrillationRisk(Person person, long time) {
     int age = person.ageInYears(time);
@@ -517,12 +504,12 @@ public final class CardiovascularDiseaseModule extends Module {
         Utilities.convertRiskToTimestep(afRisk, TimeUnit.DAYS.toMillis(3650)));
   }
 
-
   /**
    * The patient rolls the probability dice. If their roll is less than their
    * "atrial_fibrillation_risk" attribute, then "atrial_fibrillation" begins.
+   * 
    * @param person The patient.
-   * @param time The time.
+   * @param time   The time.
    */
   private static void getAtrialFibrillation(Person person, long time) {
     if (!person.attributes.containsKey("atrial_fibrillation")
@@ -539,25 +526,21 @@ public final class CardiovascularDiseaseModule extends Module {
 
   private static final double[][] ten_year_stroke_risk = {
       { 0, 0.03, 0.03, 0.04, 0.04, 0.05, 0.05, 0.06, 0.07, 0.08, 0.1, // male section
-          0.11, 0.13, 0.15, 0.17, 0.2, 0.22, 0.26, 0.29, 0.33, 0.37, 0.42, 0.47, 0.52, 0.57, 0.63,
-          0.68, 0.74, 0.79, 0.84, 0.88 },
+          0.11, 0.13, 0.15, 0.17, 0.2, 0.22, 0.26, 0.29, 0.33, 0.37, 0.42, 0.47, 0.52, 0.57, 0.63, 0.68, 0.74, 0.79,
+          0.84, 0.88 },
       { 0, 0.01, 0.01, 0.02, 0.02, 0.02, 0.03, 0.04, 0.04, 0.05, 0.06, // female
-          0.08, 0.09, 0.11, 0.13, 0.16, 0.19, 0.23, 0.27, 0.32, 0.37, 0.43, 0.5, 0.57, 0.64, 0.71,
-          0.78, 0.84 } };
+          0.08, 0.09, 0.11, 0.13, 0.16, 0.19, 0.23, 0.27, 0.32, 0.37, 0.43, 0.5, 0.57, 0.64, 0.71, 0.78, 0.84 } };
 
   // the index for each range corresponds to the number of points
-  private static final int[][] age_stroke = { 
-      { 54, 57, 60, 63, 66, 69, 73, 76, 79, 82, 85 }, // male
+  private static final int[][] age_stroke = { { 54, 57, 60, 63, 66, 69, 73, 76, 79, 82, 85 }, // male
       { 54, 57, 60, 63, 65, 68, 71, 74, 77, 79, 82 } // female
   };
 
-  private static final int[][] untreated_sys_bp_stroke = {
-      { 0, 106, 116, 126, 136, 146, 156, 166, 176, 185, 196 }, // male
+  private static final int[][] untreated_sys_bp_stroke = { { 0, 106, 116, 126, 136, 146, 156, 166, 176, 185, 196 }, // male
       { 0, 95, 107, 119, 131, 144, 156, 168, 181, 193, 205 } // female
   };
 
-  private static final int[][] treated_sys_bp_stroke = {
-      { 0, 106, 113, 118, 124, 130, 136, 143, 151, 162, 177 }, // male
+  private static final int[][] treated_sys_bp_stroke = { { 0, 106, 113, 118, 124, 130, 136, 143, 151, 162, 177 }, // male
       { 0, 95, 107, 114, 120, 126, 132, 140, 149, 161, 205 } // female
   };
 
@@ -581,11 +564,12 @@ public final class CardiovascularDiseaseModule extends Module {
   private static final double[] atrial_fibrillation_stroke_points = { 4, 6 };
 
   /**
-   * Depending on gender, age, smoking status, and various comorbidities (e.g. diabetes,
-   * coronary heart disease, atrial fibrillation), this function calculates the risk
-   * of a stroke and stores it in the "stroke_risk" attribute.
+   * Depending on gender, age, smoking status, and various comorbidities (e.g.
+   * diabetes, coronary heart disease, atrial fibrillation), this function
+   * calculates the risk of a stroke and stores it in the "stroke_risk" attribute.
+   * 
    * @param person The patient.
-   * @param time The time.
+   * @param time   The time.
    */
   private static void calculateStrokeRisk(Person person, long time) {
     Double bloodPressure = person.getVitalSign(VitalSign.SYSTOLIC_BLOOD_PRESSURE, time);
@@ -594,7 +578,8 @@ public final class CardiovascularDiseaseModule extends Module {
     }
 
     // https://www.heart.org/idc/groups/heart-public/@wcm/@sop/@smd/documents/downloadable/ucm_449858.pdf
-    // calculate stroke risk based off of prevalence of stroke in age group for people younger than
+    // calculate stroke risk based off of prevalence of stroke in age group for
+    // people younger than
     // 54. Framingham score system does not cover these.
 
     int genderIndex = ((String) person.attributes.get(Person.GENDER)).equals("M") ? 0 : 1;
@@ -606,13 +591,11 @@ public final class CardiovascularDiseaseModule extends Module {
       return;
     } else if (age < 40) {
       double rate = stroke_rate_20_39[genderIndex];
-      person.attributes.put("stroke_risk",
-          Utilities.convertRiskToTimestep(rate, TimeUnit.DAYS.toMillis(3650)));
+      person.attributes.put("stroke_risk", Utilities.convertRiskToTimestep(rate, TimeUnit.DAYS.toMillis(3650)));
       return;
     } else if (age < 55) {
       double rate = stroke_rate_40_59[genderIndex];
-      person.attributes.put("stroke_risk",
-          Utilities.convertRiskToTimestep(rate, TimeUnit.DAYS.toMillis(3650)));
+      person.attributes.put("stroke_risk", Utilities.convertRiskToTimestep(rate, TimeUnit.DAYS.toMillis(3650)));
       return;
     }
 
@@ -627,7 +610,7 @@ public final class CardiovascularDiseaseModule extends Module {
     strokePoints += getIndexForValueInRangelist(age, age_stroke[genderIndex]);
 
     int bp = bloodPressure.intValue();
-    
+
     if ((Boolean) person.attributes.getOrDefault("blood_pressure_controlled", false)) {
       strokePoints += getIndexForValueInRangelist(bp, treated_sys_bp_stroke[genderIndex]);
     } else {
@@ -657,20 +640,19 @@ public final class CardiovascularDiseaseModule extends Module {
     }
 
     // divide 10 year risk by 365 * 10 to get daily risk.
-    person.attributes.put("stroke_risk",
-        Utilities.convertRiskToTimestep(tenStrokeRisk, TimeUnit.DAYS.toMillis(3650)));
+    person.attributes.put("stroke_risk", Utilities.convertRiskToTimestep(tenStrokeRisk, TimeUnit.DAYS.toMillis(3650)));
     person.attributes.put("stroke_points", strokePoints);
   }
 
   /**
    * The patient rolls the probability dice. If their roll is less than their
    * "stroke_risk" attribute, then "stroke" and "stroke_history" begin.
+   * 
    * @param person The patient.
-   * @param time The time.
+   * @param time   The time.
    */
   private static void getStroke(Person person, long time) {
-    if (person.attributes.containsKey("stroke_risk")
-        && person.rand() < (Double) person.attributes.get("stroke_risk")) {
+    if (person.attributes.containsKey("stroke_risk") && person.rand() < (Double) person.attributes.get("stroke_risk")) {
       // Make sure the Emergency Encounter has started...
       Code code = LOOKUP.get("stroke");
       beginOrContinueEmergency(person, time, code);
@@ -686,14 +668,16 @@ public final class CardiovascularDiseaseModule extends Module {
   }
 
   /**
-   * Start or stop medication treatment depending on whether or not the patient has
-   * "coronary_heart_disease" by looking for the attribute "coronary_heart_disease".
+   * Start or stop medication treatment depending on whether or not the patient
+   * has "coronary_heart_disease" by looking for the attribute
+   * "coronary_heart_disease".
+   * 
    * @param person The patient.
-   * @param time The time.
+   * @param time   The time.
    */
   private static void chdTreatment(Person person, long time) {
-    List<String> meds = filter_meds_by_year(
-        Arrays.asList("clopidogrel", "simvastatin", "amlodipine", "nitroglycerin"), time);
+    List<String> meds = filter_meds_by_year(Arrays.asList("clopidogrel", "simvastatin", "amlodipine", "nitroglycerin"),
+        time);
 
     if ((Boolean) person.attributes.getOrDefault("coronary_heart_disease", false)) {
       for (String med : meds) {
@@ -707,26 +691,29 @@ public final class CardiovascularDiseaseModule extends Module {
   }
 
   /**
-   * Start or stop medication treatments and possibly perform a procedural intervention
-   * depending on whether or not the patient has "atrial_fibrillation" by looking for
-   * the attribute "atrial_fibrillation".
+   * Start or stop medication treatments and possibly perform a procedural
+   * intervention depending on whether or not the patient has
+   * "atrial_fibrillation" by looking for the attribute "atrial_fibrillation".
+   * 
    * @param person The patient.
-   * @param time The time.
+   * @param time   The time.
    */
   private static void atrialFibrillationTreatment(Person person, long time) {
-    List<String> meds = filter_meds_by_year(Arrays.asList("warfarin", "verapamil", "digoxin"),
-        time);
+    List<String> meds = filter_meds_by_year(Arrays.asList("warfarin", "verapamil", "digoxin"), time);
 
     if ((Boolean) person.attributes.getOrDefault("atrial_fibrillation", false)) {
       for (String med : meds) {
         prescribeMedication(med, person, time, true);
       }
 
-      // catheter ablation is a more extreme measure than electrical cardioversion and is usually
+      // catheter ablation is a more extreme measure than electrical cardioversion and
+      // is usually
       // only performed
-      // when medication and other procedures are not preferred or have failed. As a rough
+      // when medication and other procedures are not preferred or have failed. As a
+      // rough
       // simulation of this,
-      // we arbitrarily chose a 20% chance of getting catheter ablation and 80% of getting
+      // we arbitrarily chose a 20% chance of getting catheter ablation and 80% of
+      // getting
       // cardioversion
       String afibProcedure = person.rand() < 0.2 ? "catheter_ablation" : "electrical_cardioversion";
       Code code = LOOKUP.get(afibProcedure);
@@ -768,16 +755,16 @@ public final class CardiovascularDiseaseModule extends Module {
 
   /**
    * Perform Cardiovascular Disease Encounter.
+   * 
    * @param person The patient.
-   * @param time The time of the encounter.
+   * @param time   The time of the encounter.
    */
   public static void performEncounter(Person person, long time, Encounter encounter) {
     person.attributes.put(CVD_ENCOUNTER, encounter);
 
     // step 1 - diagnosis
     for (String diagnosis : new String[] { "coronary_heart_disease", "atrial_fibrillation" }) {
-      if ((Boolean) person.attributes.getOrDefault(diagnosis, false)
-          && !person.record.present.containsKey(diagnosis)) {
+      if ((Boolean) person.attributes.getOrDefault(diagnosis, false) && !person.record.present.containsKey(diagnosis)) {
         Code code = LOOKUP.get(diagnosis);
         Entry conditionEntry = person.record.conditionStart(time, code.display);
         conditionEntry.codes.add(code);
@@ -792,7 +779,7 @@ public final class CardiovascularDiseaseModule extends Module {
   private static void beginOrContinueEmergency(Person person, long time, Code code) {
     if (!person.attributes.containsKey(CVD_ENCOUNTER)) {
       Encounter encounter = EncounterModule.createEncounter(person, time, EncounterType.EMERGENCY,
-          ClinicianSpecialty.GENERAL_PRACTICE, code);
+          ClinicianSpecialty.GENERAL_PRACTICE, code, person);
       person.attributes.put(CVD_ENCOUNTER, encounter);
     }
   }
@@ -810,8 +797,9 @@ public final class CardiovascularDiseaseModule extends Module {
 
   /**
    * Perform an emergency cardiovascular disease encounter.
-   * @param person The patient.
-   * @param time The time of the emergency.
+   * 
+   * @param person    The patient.
+   * @param time      The time of the emergency.
    * @param diagnosis The diagnosis to be made.
    */
   public static void performEmergency(Person person, long time, String diagnosis) {
@@ -824,8 +812,7 @@ public final class CardiovascularDiseaseModule extends Module {
 
     for (String med : filter_meds_by_year(EMERGENCY_MEDS.get(diagnosis), time)) {
       prescribeMedication(med, person, time, false);
-      person.record.medicationEnd(time + TimeUnit.MINUTES.toMillis(15), med,
-          LOOKUP.get("stop_drug"));
+      person.record.medicationEnd(time + TimeUnit.MINUTES.toMillis(15), med, LOOKUP.get("stop_drug"));
     }
 
     // In these type of emergencies, everyone gets an echocardiogram
@@ -871,12 +858,12 @@ public final class CardiovascularDiseaseModule extends Module {
   }
 
   /**
-   * Populate the given attribute map with the list of attributes that this
-   * module reads/writes with example values when appropriate.
+   * Populate the given attribute map with the list of attributes that this module
+   * reads/writes with example values when appropriate.
    *
    * @param attributes Attribute map to populate.
    */
-  public static void inventoryAttributes(Map<String,Inventory> attributes) {
+  public static void inventoryAttributes(Map<String, Inventory> attributes) {
     String m = CardiovascularDiseaseModule.class.getSimpleName();
     // Read
     Attributes.inventory(attributes, m, Person.GENDER, true, false, "M");
@@ -897,10 +884,8 @@ public final class CardiovascularDiseaseModule extends Module {
     Attributes.inventory(attributes, m, "atrial_fibrillation", false, true, "true");
     Attributes.inventory(attributes, m, "atrial_fibrillation_risk", false, true, "Numeric");
     Attributes.inventory(attributes, m, "cardio_risk", false, true, "1.0");
-    Attributes.inventory(attributes, m,
-        "cardiovascular_procedures", false, true, "Map<String, List<String>>");
-    Attributes.inventory(attributes, m,
-        "cardiovascular_disease_med_changes", false, true, "Set<String>");
+    Attributes.inventory(attributes, m, "cardiovascular_procedures", false, true, "Map<String, List<String>>");
+    Attributes.inventory(attributes, m, "cardiovascular_disease_med_changes", false, true, "Set<String>");
     Attributes.inventory(attributes, m, "coronary_heart_disease", false, true, "true");
     Attributes.inventory(attributes, m, "stroke_risk", false, true, "0.0");
     Attributes.inventory(attributes, m, "stroke_risk", false, true, "0.5");

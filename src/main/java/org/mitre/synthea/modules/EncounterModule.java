@@ -22,27 +22,24 @@ public final class EncounterModule extends Module {
   public static final String ACTIVE_EMERGENCY_ENCOUNTER = "active_emergency_encounter";
   /**
    * These are thresholds for patients to seek symptom-driven care - they'll go to
-   * the appropriate provider based on which threshold they meet.
-   * By CDC statistics (https://www.cdc.gov/nchs/data/ahcd/namcs_summary/2015_namcs_web_tables.pdf),
-   * a person goes to an average of
-   * 24,904,00/(US adult population = 249485228) = .0998 urgent visits per year.
-   * The goal for the number of symptom-driven encounters (urgent care, PCP, and ER) is .0998 * age.
+   * the appropriate provider based on which threshold they meet. By CDC
+   * statistics
+   * (https://www.cdc.gov/nchs/data/ahcd/namcs_summary/2015_namcs_web_tables.pdf),
+   * a person goes to an average of 24,904,00/(US adult population = 249485228) =
+   * .0998 urgent visits per year. The goal for the number of symptom-driven
+   * encounters (urgent care, PCP, and ER) is .0998 * age.
    */
   public static final int PCP_SYMPTOM_THRESHOLD = 300;
   public static final int URGENT_CARE_SYMPTOM_THRESHOLD = 350;
   public static final int EMERGENCY_SYMPTOM_THRESHOLD = 500;
   public static final String LAST_VISIT_SYMPTOM_TOTAL = "last_visit_symptom_total";
 
-  public static final Code ENCOUNTER_CHECKUP = new Code("SNOMED-CT", "185349003",
-      "Encounter for check up (procedure)");
-  public static final Code ENCOUNTER_EMERGENCY = new Code("SNOMED-CT", "50849002",
-      "Emergency Encounter");
-  public static final Code WELL_CHILD_VISIT = new Code("SNOMED-CT", "410620009",
-      "Well child visit (procedure)");
+  public static final Code ENCOUNTER_CHECKUP = new Code("SNOMED-CT", "185349003", "Encounter for check up (procedure)");
+  public static final Code ENCOUNTER_EMERGENCY = new Code("SNOMED-CT", "50849002", "Emergency Encounter");
+  public static final Code WELL_CHILD_VISIT = new Code("SNOMED-CT", "410620009", "Well child visit (procedure)");
   public static final Code GENERAL_EXAM = new Code("SNOMED-CT", "162673000",
       "General examination of patient (procedure)");
-  public static final Code ENCOUNTER_URGENTCARE = new Code("SNOMED-CT", "702927004",
-      "Urgent care clinic (procedure)");
+  public static final Code ENCOUNTER_URGENTCARE = new Code("SNOMED-CT", "702927004", "Urgent care clinic (procedure)");
   // NOTE: if new codes are added, be sure to update getAllCodes below
 
   public EncounterModule() {
@@ -66,11 +63,9 @@ public final class EncounterModule extends Module {
     Encounter encounter = null;
 
     // add a wellness encounter if this is the right time
-    if (person.record.timeSinceLastWellnessEncounter(time)
-        >= recommendedTimeBetweenWellnessVisits(person, time)) {
+    if (person.record.timeSinceLastWellnessEncounter(time) >= recommendedTimeBetweenWellnessVisits(person, time)) {
       Code code = getWellnessVisitCode(person, time);
-      encounter = createEncounter(person, time, EncounterType.WELLNESS,
-          ClinicianSpecialty.GENERAL_PRACTICE, code);
+      encounter = createEncounter(person, time, EncounterType.WELLNESS, ClinicianSpecialty.GENERAL_PRACTICE, code);
       encounter.name = "Encounter Module Scheduled Wellness";
       person.attributes.put(ACTIVE_WELLNESS_ENCOUNTER, true);
       startedEncounter = true;
@@ -78,11 +73,11 @@ public final class EncounterModule extends Module {
       if (!person.attributes.containsKey(LAST_VISIT_SYMPTOM_TOTAL)) {
         person.attributes.put(LAST_VISIT_SYMPTOM_TOTAL, 0);
       }
-      if (person.symptomTotal() != (int)person.attributes.get(LAST_VISIT_SYMPTOM_TOTAL)) {
+      if (person.symptomTotal() != (int) person.attributes.get(LAST_VISIT_SYMPTOM_TOTAL)) {
         person.attributes.put(LAST_VISIT_SYMPTOM_TOTAL, person.symptomTotal());
         person.addressLargestSymptom();
-        encounter = createEncounter(person, time, EncounterType.EMERGENCY,
-            ClinicianSpecialty.GENERAL_PRACTICE, ENCOUNTER_EMERGENCY);
+        encounter = createEncounter(person, time, EncounterType.EMERGENCY, ClinicianSpecialty.GENERAL_PRACTICE,
+            ENCOUNTER_EMERGENCY);
         encounter.name = "Encounter Module Symptom Driven";
         person.attributes.put(ACTIVE_EMERGENCY_ENCOUNTER, true);
         startedEncounter = true;
@@ -91,11 +86,11 @@ public final class EncounterModule extends Module {
       if (!person.attributes.containsKey(LAST_VISIT_SYMPTOM_TOTAL)) {
         person.attributes.put(LAST_VISIT_SYMPTOM_TOTAL, 0);
       }
-      if (person.symptomTotal() != (int)person.attributes.get(LAST_VISIT_SYMPTOM_TOTAL)) {
+      if (person.symptomTotal() != (int) person.attributes.get(LAST_VISIT_SYMPTOM_TOTAL)) {
         person.attributes.put(LAST_VISIT_SYMPTOM_TOTAL, person.symptomTotal());
         person.addressLargestSymptom();
-        encounter = createEncounter(person, time, EncounterType.URGENTCARE,
-            ClinicianSpecialty.GENERAL_PRACTICE, ENCOUNTER_URGENTCARE);
+        encounter = createEncounter(person, time, EncounterType.URGENTCARE, ClinicianSpecialty.GENERAL_PRACTICE,
+            ENCOUNTER_URGENTCARE);
         encounter.name = "Encounter Module Symptom Driven";
         person.attributes.put(ACTIVE_URGENT_CARE_ENCOUNTER, true);
         startedEncounter = true;
@@ -104,11 +99,11 @@ public final class EncounterModule extends Module {
       if (!person.attributes.containsKey(LAST_VISIT_SYMPTOM_TOTAL)) {
         person.attributes.put(LAST_VISIT_SYMPTOM_TOTAL, 0);
       }
-      if (person.symptomTotal() != (int)person.attributes.get(LAST_VISIT_SYMPTOM_TOTAL)) {
+      if (person.symptomTotal() != (int) person.attributes.get(LAST_VISIT_SYMPTOM_TOTAL)) {
         person.attributes.put(LAST_VISIT_SYMPTOM_TOTAL, person.symptomTotal());
         person.addressLargestSymptom();
-        encounter = createEncounter(person, time, EncounterType.OUTPATIENT,
-            ClinicianSpecialty.GENERAL_PRACTICE, ENCOUNTER_CHECKUP);
+        encounter = createEncounter(person, time, EncounterType.OUTPATIENT, ClinicianSpecialty.GENERAL_PRACTICE,
+            ENCOUNTER_CHECKUP);
         encounter.name = "Encounter Module Symptom Driven";
         person.attributes.put(ACTIVE_WELLNESS_ENCOUNTER, true);
         startedEncounter = true;
@@ -126,16 +121,17 @@ public final class EncounterModule extends Module {
   }
 
   /**
-   * Create an Encounter that is coded, with a provider organzation, and a clinician.
-   * @param person The patient.
-   * @param time The time of the encounter.
-   * @param type The type of encounter (e.g. emergency).
+   * Create an Encounter that is coded, with a provider organzation, and a
+   * clinician.
+   * 
+   * @param person    The patient.
+   * @param time      The time of the encounter.
+   * @param type      The type of encounter (e.g. emergency).
    * @param specialty The clinician specialty (e.g. "General Practice")
-   * @param code The code to assign to the encounter.
+   * @param code      The code to assign to the encounter.
    * @return The encounter.
    */
-  public static Encounter createEncounter(Person person, long time, EncounterType type,
-      String specialty, Code code) {
+  public static Encounter createEncounter(Person person, long time, EncounterType type, String specialty, Code code) {
     // what year is it?
     int year = Utilities.getYear(time);
     // create the encounter
@@ -149,13 +145,16 @@ public final class EncounterModule extends Module {
     encounter.provider = prov;
     // assign a clinician
     encounter.clinician = prov.chooseClinicianList(specialty, person);
+    // assign questionnaireResponses
+    encounter.addQuestionnaireResponses(prov.getQuestionnaireresponse(person, prov));
     return encounter;
   }
 
   /**
    * Get the correct Wellness Visit Code by age of patient.
+   * 
    * @param person The patient.
-   * @param time The time of the encounter which we translate to age of patient.
+   * @param time   The time of the encounter which we translate to age of patient.
    * @return SNOMED-CT code for Wellness Visit.
    */
   public static Code getWellnessVisitCode(Person person, long time) {
@@ -168,10 +167,11 @@ public final class EncounterModule extends Module {
   }
 
   /**
-   * Recommended time between Wellness Visits by age of patient and whether 
-   * they have chronic medications.
+   * Recommended time between Wellness Visits by age of patient and whether they
+   * have chronic medications.
+   * 
    * @param person The patient.
-   * @param time The time of the encounter which we translate to age of patient.
+   * @param time   The time of the encounter which we translate to age of patient.
    * @return Recommended time between Wellness Visits in milliseconds
    */
   public long recommendedTimeBetweenWellnessVisits(Person person, long time) {
@@ -239,17 +239,16 @@ public final class EncounterModule extends Module {
    * @return Collection of all codes and concepts this module uses
    */
   public static Collection<Code> getAllCodes() {
-    return Arrays.asList(ENCOUNTER_CHECKUP, ENCOUNTER_EMERGENCY, 
-        WELL_CHILD_VISIT, GENERAL_EXAM, ENCOUNTER_URGENTCARE);
+    return Arrays.asList(ENCOUNTER_CHECKUP, ENCOUNTER_EMERGENCY, WELL_CHILD_VISIT, GENERAL_EXAM, ENCOUNTER_URGENTCARE);
   }
 
   /**
-   * Populate the given attribute map with the list of attributes that this
-   * module reads/writes with example values when appropriate.
+   * Populate the given attribute map with the list of attributes that this module
+   * reads/writes with example values when appropriate.
    *
    * @param attributes Attribute map to populate.
    */
-  public static void inventoryAttributes(Map<String,Inventory> attributes) {
+  public static void inventoryAttributes(Map<String, Inventory> attributes) {
     String m = EncounterModule.class.getSimpleName();
     // Read
     Attributes.inventory(attributes, m, LAST_VISIT_SYMPTOM_TOTAL, true, true, "Integer");
