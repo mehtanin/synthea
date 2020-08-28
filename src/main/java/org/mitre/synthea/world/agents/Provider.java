@@ -350,10 +350,10 @@ public class Provider implements QuadTreeElement, Serializable {
     }
   }
 
-  public static void loadQuestionnaire(Location location, long clinicianSeed) {
+  public static void loadQuestionnaire(Location location, long QuestionnaireResponseCount) {
     try {
       String questionnaireFile = Config.get("generate.providers.questionnaires.default_file");
-      loadQuestionnaire(location, questionnaireFile, clinicianSeed);
+      loadQuestionnaire(location, questionnaireFile, QuestionnaireResponseCount);
     } catch (IOException e) {
       System.err.println("ERROR: unable to load questionnaire for state: " + location.state);
       e.printStackTrace();
@@ -431,15 +431,19 @@ public class Provider implements QuadTreeElement, Serializable {
     }
   }
 
-  public static void loadQuestionnaire(Location location, String filename, long clinicianSeed) throws IOException {
+  public static void loadQuestionnaire(Location location, String filename, long QuestionnaireResponseCount)
+      throws IOException {
 
     String resource = Utilities.readResource(filename);
     Iterator<? extends Map<String, String>> csv = SimpleCSV.parseLineByLine(resource);
-
+    int count = 0;
     while (csv.hasNext()) {
       Map<String, String> row = csv.next();
       Questionnaire parsed = csvLineToQuestionnaire(row);
-      questionnaireList.add(parsed);
+      if (count < QuestionnaireResponseCount) {
+        questionnaireList.add(parsed);
+      }
+      count++;
     }
   }
 

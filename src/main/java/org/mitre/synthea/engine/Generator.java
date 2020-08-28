@@ -87,6 +87,7 @@ public class Generator {
    */
   public static class GeneratorOptions {
     public int population = Integer.parseInt(Config.get("generate.default_population", "1"));
+    public int questionnaireResponses = Integer.parseInt(Config.get("generate.default_questionnaireResponses", "1"));
     public long seed = System.currentTimeMillis();
     public long clinicianSeed = seed;
     /**
@@ -241,7 +242,7 @@ public class Generator {
     // initialize hospitals
     Provider.loadProviders(location, options.clinicianSeed);
     // initialize questionnaire
-    Provider.loadQuestionnaire(location, options.clinicianSeed);
+    Provider.loadQuestionnaire(location, options.questionnaireResponses);
     // Initialize Payers
     Payer.loadPayers(location);
     // ensure modules load early
