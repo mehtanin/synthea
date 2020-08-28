@@ -1329,10 +1329,12 @@ public class FhirR4 {
   private static BundleEntryComponent questionnaireResponse(BundleEntryComponent personEntry, Bundle bundle,
       BundleEntryComponent encounterEntry, QuestionnaireResponse questionnaireResponse, Encounter encounter) {
 
-    questionnaireResponse.setSubject(new Reference(personEntry.getFullUrl()));
-    questionnaireResponse.setEncounter(new Reference(encounterEntry.getFullUrl()));
-    questionnaireResponse.setAuthor(new Reference(encounter.clinician.getResourceID()));
-    questionnaireResponse.setSource(new Reference(personEntry.getFullUrl()));
+    // questionnaireResponse.setSubject(new Reference(personEntry.getFullUrl()));
+    // questionnaireResponse.setEncounter(new
+    // Reference(encounterEntry.getFullUrl()));
+    // questionnaireResponse.setAuthor(new
+    // Reference(encounter.clinician.getResourceID()));
+    // questionnaireResponse.setSource(new Reference(personEntry.getFullUrl()));
     BundleEntryComponent qResponseEntry = newEntry(bundle, questionnaireResponse);
     return qResponseEntry;
   }

@@ -146,7 +146,7 @@ public final class EncounterModule extends Module {
     // assign a clinician
     encounter.clinician = prov.chooseClinicianList(specialty, person);
     // assign questionnaireResponses
-    encounter.addQuestionnaireResponses(prov.getQuestionnaireresponse(person, prov));
+    encounter.addQuestionnaireResponses(prov.getQuestionnaireresponse(person, prov, encounter));
     return encounter;
   }
 

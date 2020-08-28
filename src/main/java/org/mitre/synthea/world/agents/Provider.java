@@ -33,18 +33,20 @@ import org.mitre.synthea.world.agents.behaviors.ProviderFinderRandom;
 import org.mitre.synthea.world.concepts.ClinicianSpecialty;
 import org.mitre.synthea.world.concepts.Questionnaireresponse;
 import org.mitre.synthea.world.concepts.Questionnaire;
+import org.mitre.synthea.world.concepts.HealthRecord.Encounter;
 import org.mitre.synthea.world.concepts.HealthRecord.EncounterType;
 import org.mitre.synthea.world.geography.Demographics;
 import org.mitre.synthea.world.geography.Location;
 import org.mitre.synthea.world.geography.quadtree.QuadTree;
 import org.mitre.synthea.world.geography.quadtree.QuadTreeElement;
-
+import org.hl7.fhir.QuestionnaireStatus;
 import org.hl7.fhir.r4.model.QuestionnaireResponse;
 import org.hl7.fhir.r4.model.Reference;
 import org.hl7.fhir.r4.model.StringType;
 import org.hl7.fhir.r4.model.Type;
 import org.hl7.fhir.r4.model.QuestionnaireResponse.QuestionnaireResponseItemAnswerComponent;
 import org.hl7.fhir.r4.model.QuestionnaireResponse.QuestionnaireResponseItemComponent;
+import org.hl7.fhir.r4.model.QuestionnaireResponse.QuestionnaireResponseStatus;
 
 public class Provider implements QuadTreeElement, Serializable {
 
@@ -531,11 +533,17 @@ public class Provider implements QuadTreeElement, Serializable {
     return doc;
   }
 
-  public QuestionnaireResponse getQuestionnaireresponse(Person person, Provider provider) {
+  public QuestionnaireResponse getQuestionnaireresponse(Person person, Provider provider, Encounter encounter) {
     List<Questionnaire> qList = getQuestionnaireList();
     QuestionnaireResponse qResponse = new QuestionnaireResponse();
-    qResponse.setQuestionnaire("Admin");
+    qResponse.setQuestionnaire("Default");
     qResponse.setAuthor(new Reference(provider.getResourceID()));
+    var personId = (String) person.attributes.get("id");
+    qResponse.setSubject(new Reference(personId));
+    qResponse.setSource(new Reference(personId));
+    qResponse.setEncounter(new Reference(encounter.clinician.getResourceID()));
+    QuestionnaireResponseStatus status = QuestionnaireResponseStatus.COMPLETED;
+    qResponse.setStatus(status);
 
     for (Questionnaire q : qList) {
       QuestionnaireResponseItemComponent item = new QuestionnaireResponseItemComponent();
@@ -543,11 +551,10 @@ public class Provider implements QuadTreeElement, Serializable {
       Random rand = new Random();
       int randomNum = rand.nextInt((3) + 1);
       String[] answerOptions = (String[]) q.scales.toArray(new String[q.scales.size()]);
-
       String[] answerValue = answerOptions[randomNum].split("=");
-      answer.setId(answerValue[0]);
+      answer.setId(answerValue[0].trim());
       StringType value = new StringType();
-      value.setValue(answerValue[1]);
+      value.setValue(answerValue[1].trim().replaceAll("\"", ""));
       answer.setValue(value);
       item.setDefinition(q.category + " | " + q.subCategory);
       item.setText(q.item);
