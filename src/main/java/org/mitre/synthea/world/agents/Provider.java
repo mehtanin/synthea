@@ -541,7 +541,7 @@ public class Provider implements QuadTreeElement, Serializable {
     List<Questionnaire> qList = getQuestionnaireList();
     QuestionnaireResponse qResponse = new QuestionnaireResponse();
     qResponse.setQuestionnaire("Default");
-    qResponse.setAuthor(new Reference(provider.getResourceID()));
+    // qResponse.setAuthor(new Reference(provider.getResourceID()));
     var personId = (String) person.attributes.get("id");
     qResponse.setSubject(new Reference(personId));
     qResponse.setSource(new Reference(personId));
