@@ -339,9 +339,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": 40095003,
-                    "display": "Injury of kidney (disorder)"
+                    "system": "ICD-10",
+                    "code": "S37009S",
+                    "display": "Unspecified injury of unspecified kidney (sequela)"
                   }
                 ]
               }
@@ -366,9 +366,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": 65710008,
-                    "display": "Acute respiratory failure (disorder)"
+                    "system": "ICD-10",
+                    "code": "J9600",
+                    "display": "Acute respiratory failure, unspecified whether with hypoxia or hypercapnia"
                   }
                 ]
               },
@@ -376,9 +376,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": 76571007,
-                    "display": "Septic shock (disorder)"
+                    "system": "ICD-10",
+                    "code": "R6521",
+                    "display": "Severe sepsis with septic shock"
                   }
                 ]
               }

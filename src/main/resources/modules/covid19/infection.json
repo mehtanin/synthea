@@ -44,8 +44,8 @@
       "assign_to_attribute": "covid19",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 840539006,
+          "system": "ICD-10",
+          "code": "U071",
           "display": "COVID-19"
         }
       ],
@@ -89,9 +89,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 840544004,
-          "display": "Suspected COVID-19"
+          "system": "ICD-10",
+          "code": "U071",
+          "display": "COVID-10"
         }
       ],
       "direct_transition": "Apply Face Mask to Patient"

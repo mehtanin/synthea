@@ -30,9 +30,9 @@
       "target_encounter": "ED_Visit_For_Allergic_Reaction",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "241929008",
-          "display": "Acute allergic reaction"
+          "system": "ICD-10",
+          "code": "T7840XS",
+          "display": "Allergy, unspecified (sequela)"
         }
       ],
       "direct_transition": "Administer_Epinephrine"

@@ -961,7 +961,7 @@
         },
         {
           "condition": {
-            "condition_type": "Active Condition",
+            "condition_type": "Active Medication",
             "codes": [
               {
                 "system": "SNOMED-CT",

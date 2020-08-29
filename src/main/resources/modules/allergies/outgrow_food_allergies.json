@@ -23,9 +23,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "420174000",
-                "display": "Allergy to wheat"
+                "system": "ICD-10",
+                "code": "Z91018",
+                "display": "Allergy to other foods"
               }
             ]
           },
@@ -54,9 +54,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "420174000",
-          "display": "Allergy to wheat"
+          "system": "ICD-10",
+          "code": "Z91018",
+          "display": "Allergy to other foods"
         }
       ],
       "direct_transition": "Dairy_Allergy"
@@ -74,9 +74,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "425525006",
-                "display": "Allergy to dairy product"
+                "system": "ICD-10",
+                "code": "Z91011",
+                "display": "Allergy to milk products"
               }
             ]
           },
@@ -105,9 +105,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "425525006",
-          "display": "Allergy to dairy product"
+          "system": "ICD-10",
+          "code": "Z91011",
+          "display": "Allergy to milk products"
         }
       ],
       "direct_transition": "Eggs_Allergy"
@@ -125,8 +125,8 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "91930004",
+                "system": "ICD-10",
+                "code": "Z91012",
                 "display": "Allergy to eggs"
               }
             ]
@@ -156,8 +156,8 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "91930004",
+          "system": "ICD-10",
+          "code": "Z91012",
           "display": "Allergy to eggs"
         }
       ],
@@ -176,9 +176,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "714035009",
-                "display": "Allergy to soya"
+                "system": "ICD-10",
+                "code": "K9049",
+                "display": "Malabsorption due to intolerance, not elsewhere classified"
               }
             ]
           },
@@ -207,9 +207,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "714035009",
-          "display": "Allergy to soya"
+          "system": "ICD-10",
+          "code": "K9049",
+          "display": "Malabsorption due to intolerance, not elsewhere classified"
         }
       ],
       "direct_transition": "Latex_Allergy"
@@ -227,9 +227,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "300916003",
-                "display": "Latex allergy"
+                "system": "ICD-10",
+                "code": "Z91040",
+                "display": "Latex allergy status"
               }
             ]
           },
@@ -258,9 +258,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "300916003",
-          "display": "Latex allergy"
+          "system": "ICD-10",
+          "code": "Z91040",
+          "display": "Latex allergy status"
         }
       ],
       "direct_transition": "Check_For_Other_Food_Allergies"
@@ -276,8 +276,8 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "91935009",
+                    "system": "ICD-10",
+                    "code": "Z91010",
                     "display": "Allergy to peanuts"
                   }
                 ]
@@ -286,9 +286,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "91934008",
-                    "display": "Allergy to nut"
+                    "system": "ICD-10",
+                    "code": "Z91018",
+                    "display": "Allergy to other foods"
                   }
                 ]
               },
@@ -296,9 +296,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "417532002",
-                    "display": "Allergy to fish"
+                    "system": "ICD-10",
+                    "code": "Z91013",
+                    "display": "Allergy to seafood"
                   }
                 ]
               },
@@ -306,9 +306,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "300913006",
-                    "display": "Shellfish allergy"
+                    "system": "ICD-10",
+                    "code": "Z91013",
+                    "display": "Allergy to seafood"
                   }
                 ]
               }

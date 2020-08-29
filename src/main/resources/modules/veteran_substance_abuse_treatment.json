@@ -13,9 +13,9 @@
       "target_encounter": "Wellness Encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 449868002,
-          "display": "Smokes tobacco daily"
+          "system": "ICD-10",
+          "code": "Z720",
+          "display": "Tobacco use"
         }
       ],
       "direct_transition": "Smoking_Careplan"
@@ -85,9 +85,9 @@
       "target_encounter": "Wellness Encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 7200002,
-          "display": "Alcoholism"
+          "system": "ICD-10",
+          "code": "F1020",
+          "display": "Alcohol dependence, uncomplicated"
         }
       ],
       "direct_transition": "Alcoholism_Care_Plan"
@@ -196,9 +196,9 @@
       "target_encounter": "Wellness Encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 5602001,
-          "display": "Opioid abuse (disorder)"
+          "system": "ICD-10",
+          "code": "F1110",
+          "display": "Opioid abuse, uncomplicated"
         }
       ],
       "direct_transition": "encounter_end"

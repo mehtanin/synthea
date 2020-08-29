@@ -15,9 +15,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "233604007",
-          "display": "Pneumonia (disorder)"
+          "system": "ICD-10",
+          "code": "J189",
+          "display": "Pneumonia, unspecified organism"
         }
       ],
       "direct_transition": "End Mild Respiratory Distress"
@@ -26,9 +26,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "67782005",
-          "display": "Acute respiratory distress syndrome (disorder)"
+          "system": "ICD-10",
+          "code": "J80",
+          "display": "Acute respiratory distress syndrome"
         }
       ],
       "direct_transition": "End Acute Cardiac Injury"
@@ -37,9 +37,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "770349000",
-          "display": "Sepsis caused by virus (disorder)"
+          "system": "ICD-10",
+          "code": "B349",
+          "display": "Viral infection, unspecified"
         }
       ],
       "direct_transition": "End Septic Shock"
@@ -48,9 +48,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "76571007",
-          "display": "Septic shock (disorder)"
+          "system": "ICD-10",
+          "code": "R6521",
+          "display": "Severe sepsis with septic shock"
         }
       ],
       "direct_transition": "End Covid19"
@@ -59,9 +59,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "84114007",
-          "display": "Heart failure (disorder)"
+          "system": "ICD-10",
+          "code": "I509",
+          "display": "Heart failure, unspecified"
         }
       ],
       "direct_transition": "End Pneumonia"
@@ -70,9 +70,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "86175003",
-          "display": "Injury of heart (disorder)"
+          "system": "ICD-10",
+          "code": "S2690XS",
+          "display": "Unspecified injury of heart, unspecified with or without hemopericardium (sequela)"
         }
       ],
       "direct_transition": "End Acute Kidney Injury"
@@ -81,9 +81,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "40095003",
-          "display": "Injury of kidney (disorder)"
+          "system": "ICD-10",
+          "code": "S37009S",
+          "display": "Unspecified injury of unspecified kidney (sequela)"
         }
       ],
       "direct_transition": "End Coagulopathy"
@@ -92,9 +92,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "234466008",
-          "display": "Acquired coagulation disorder (disorder)"
+          "system": "ICD-10",
+          "code": "D688",
+          "display": "Other specified coagulation defects"
         }
       ],
       "direct_transition": "End Pulmonary Embolism"
@@ -103,9 +103,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "271825005",
-          "display": "Respiratory distress (finding)"
+          "system": "ICD-10",
+          "code": "R0603",
+          "display": "Acute respiratory distress"
         }
       ],
       "direct_transition": "End Respiratory Failure"
@@ -114,9 +114,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "65710008",
-          "display": "Acute respiratory failure (disorder)"
+          "system": "ICD-10",
+          "code": "J9600",
+          "display": "Acute respiratory failure, unspecified whether with hypoxia or hypercapnia"
         }
       ],
       "remarks": [
@@ -133,9 +133,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 706870000,
-          "display": "Acute pulmonary embolism (disorder)"
+          "system": "ICD-10",
+          "code": "I2699",
+          "display": "Other pulmonary embolism without acute cor pulmonale"
         }
       ],
       "direct_transition": "End Venous Thrombosis"
@@ -144,9 +144,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 132281000119108,
-          "display": "Acute deep venous thrombosis (disorder)"
+          "system": "ICD-10",
+          "code": "I8290",
+          "display": "Acute embolism and thrombosis of unspecified vein"
         }
       ],
       "direct_transition": "End Heart Failure"

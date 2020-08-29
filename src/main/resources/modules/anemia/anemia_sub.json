@@ -13,9 +13,9 @@
       "assign_to_attribute": "anemia",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 271737000,
-          "display": "Anemia (disorder)"
+          "system": "ICD-10",
+          "code": "D649",
+          "display": "Anemia, unspecified"
         }
       ],
       "direct_transition": "Anemia_Encounter"

@@ -45,9 +45,9 @@
       "assign_to_attribute": "Sinusitis Condition",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "444814009",
-          "display": "Viral sinusitis (disorder)"
+          "system": "ICD-10",
+          "code": "B349",
+          "display": "Viral infection, unspecified"
         }
       ],
       "direct_transition": "Symptom_of_Infection"
@@ -58,9 +58,9 @@
       "assign_to_attribute": "Sinusitis Condition",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "75498004",
-          "display": "Acute bacterial sinusitis (disorder)"
+          "system": "ICD-10",
+          "code": "J0190",
+          "display": "Acute sinusitis, unspecified"
         }
       ],
       "direct_transition": "Symptom_of_Infection"
@@ -80,9 +80,9 @@
       "assign_to_attribute": "Sinusitis Condition",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "36971009",
-          "display": "Sinusitis (disorder)"
+          "system": "ICD-10",
+          "code": "J329",
+          "display": "Chronic sinusitis, unspecified"
         }
       ],
       "direct_transition": "Symptom_of_Inflammation"
@@ -247,9 +247,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "75498004",
-                    "display": "Acute bacterial sinusitis (disorder)"
+                    "system": "ICD-10",
+                    "code": "J0190",
+                    "display": "Acute sinusitis, unspecified"
                   }
                 ]
               }
@@ -262,9 +262,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "444814009",
-                "display": "Viral sinusitis (disorder)"
+                "system": "ICD-10",
+                "code": "B349",
+                "display": "Viral infection, unspecified"
               }
             ]
           },
@@ -421,9 +421,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "40055000",
-                "display": "Chronic sinusitis (disorder)"
+                "system": "ICD-10",
+                "code": "J329",
+                "display": "Chronic sinusitis, unspecified"
               }
             ]
           },
@@ -457,9 +457,9 @@
       "target_encounter": "Chronic_Sinusitis_Followup",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "40055000",
-          "display": "Chronic sinusitis (disorder)"
+          "system": "ICD-10",
+          "code": "J329",
+          "display": "Chronic sinusitis, unspecified"
         }
       ],
       "direct_transition": "End_Chronic_Followup"
@@ -487,9 +487,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "40055000",
-                "display": "Chronic sinusitis (disorder)"
+                "system": "ICD-10",
+                "code": "J329",
+                "display": "Chronic sinusitis, unspecified"
               }
             ]
           },

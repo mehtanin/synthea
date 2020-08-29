@@ -157,9 +157,9 @@
       "target_encounter": "Enter_Directed_Use_Encounter1",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "196416002",
-          "display": "Impacted molars"
+          "system": "ICD-10",
+          "code": "K011",
+          "display": "Impacted teeth"
         }
       ],
       "direct_transition": "Enter_Directed_Use_Encounter1"
@@ -205,9 +205,9 @@
       "target_encounter": "Enter_Directed_Use_Encounter2",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "82423001",
-          "display": "Chronic pain"
+          "system": "ICD-10",
+          "code": "R52",
+          "display": "Pain, unspecified"
         }
       ],
       "direct_transition": "Enter_Directed_Use_Encounter2"
@@ -242,9 +242,9 @@
       "target_encounter": "Enter_Directed_Use_Encounter3",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "124171000119105",
-          "display": "Chronic intractable migraine without aura"
+          "system": "ICD-10",
+          "code": "G43719",
+          "display": "Chronic migraine without aura, intractable, without status migrainosus"
         }
       ],
       "direct_transition": "Enter_Directed_Use_Encounter3"
@@ -608,9 +608,9 @@
       "target_encounter": "Directed_Use_Overdose_Encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "55680006",
-          "display": "Drug overdose"
+          "system": "ICD-10",
+          "code": "T50904S",
+          "display": "Poisoning by unspecified drugs, medicaments and biological substances, undetermined (sequela)"
         }
       ],
       "direct_transition": "Directed_Use_Overdose_Encounter"
@@ -646,9 +646,9 @@
       "target_encounter": "Misuse_Overdose_Encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "55680006",
-          "display": "Drug overdose"
+          "system": "ICD-10",
+          "code": "T50904S",
+          "display": "Poisoning by unspecified drugs, medicaments and biological substances, undetermined (sequela)"
         }
       ],
       "direct_transition": "Misuse_Overdose_Encounter"
@@ -684,9 +684,9 @@
       "target_encounter": "Addiction_Overdose_Encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "55680006",
-          "display": "Drug overdose"
+          "system": "ICD-10",
+          "code": "T50904S",
+          "display": "Poisoning by unspecified drugs, medicaments and biological substances, undetermined (sequela)"
         }
       ],
       "direct_transition": "Addiction_Overdose_Encounter"

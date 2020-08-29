@@ -64,9 +64,9 @@
       "target_encounter": "Doctor_Visit",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "10509002",
-          "display": "Acute bronchitis (disorder)"
+          "system": "ICD-10",
+          "code": "J209",
+          "display": "Acute bronchitis, unspecified"
         }
       ],
       "direct_transition": "Bronchitis_Symptom1"

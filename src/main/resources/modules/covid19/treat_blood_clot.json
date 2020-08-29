@@ -71,9 +71,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": 40095003,
-                "display": "Injury of kidney (disorder)"
+                "system": "ICD-10",
+                "code": "S37009S",
+                "display": "Unspecified injury of unspecified kidney (sequela)"
               }
             ]
           }
@@ -111,9 +111,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": 40095003,
-                "display": "Injury of kidney (disorder)"
+                "system": "ICD-10",
+                "code": "S37009S",
+                "display": "Unspecified injury of unspecified kidney (sequela)"
               }
             ]
           }

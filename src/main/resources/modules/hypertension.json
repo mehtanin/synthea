@@ -38,9 +38,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 59621000,
-          "display": "Hypertension"
+          "system": "ICD-10",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
         }
       ],
       "assign_to_attribute": "hypertension_dx",
@@ -287,9 +287,9 @@
                                     "condition_type": "Active Condition",
                                     "codes": [
                                       {
-                                        "system": "SNOMED-CT",
-                                        "code": 22298006,
-                                        "display": "Myocardial Infarction"
+                                        "system": "ICD-10",
+                                        "code": "I219",
+                                        "display": "Acute myocardial infarction, unspecified"
                                       }
                                     ]
                                   },
@@ -297,9 +297,9 @@
                                     "condition_type": "Active Condition",
                                     "codes": [
                                       {
-                                        "system": "SNOMED-CT",
-                                        "code": 399211009,
-                                        "display": "History of myocardial infarction (situation)"
+                                        "system": "ICD-10",
+                                        "code": "I252",
+                                        "display": "Old myocardial infarction"
                                       }
                                     ]
                                   }

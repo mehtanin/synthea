@@ -73,9 +73,9 @@
       "target_encounter": "Hyperlipidemia initial workup encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 55822004,
-          "display": "Hyperlipidemia"
+          "system": "ICD-10",
+          "code": "E785",
+          "display": "Hyperlipidemia, unspecified"
         }
       ],
       "direct_transition": "Hyperlipidemia initial workup encounter"

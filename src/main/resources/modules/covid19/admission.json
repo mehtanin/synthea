@@ -292,9 +292,9 @@
                     "condition_type": "Active Condition",
                     "codes": [
                       {
-                        "system": "SNOMED-CT",
-                        "code": 56018004,
-                        "display": "Wheezing (finding)"
+                        "system": "ICD-10",
+                        "code": "R062",
+                        "display": "Wheezing"
                       }
                     ]
                   }
@@ -341,9 +341,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "65710008",
-                    "display": "Acute respiratory failure (disorder)"
+                    "system": "ICD-10",
+                    "code": "J9600",
+                    "display": "Acute respiratory failure, unspecified whether with hypoxia or hypercapnia"
                   }
                 ]
               },
@@ -351,9 +351,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "76571007",
-                    "display": "Septic shock (disorder)"
+                    "system": "ICD-10",
+                    "code": "R6521",
+                    "display": "Severe sepsis with septic shock"
                   }
                 ]
               }
@@ -748,9 +748,9 @@
                     "condition_type": "Active Condition",
                     "codes": [
                       {
-                        "system": "SNOMED-CT",
-                        "code": 267036007,
-                        "display": "Dyspnea (finding)"
+                        "system": "ICD-10",
+                        "code": "R0600",
+                        "display": "Dyspnea, unspecified"
                       }
                     ]
                   }
@@ -821,9 +821,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": 40095003,
-                    "display": "Injury of kidney (disorder)"
+                    "system": "ICD-10",
+                    "code": "S37009S",
+                    "display": "Unspecified injury of unspecified kidney (sequela)"
                   }
                 ]
               }
@@ -895,9 +895,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": 65710008,
-                    "display": "Acute respiratory failure (disorder)"
+                    "system": "ICD-10",
+                    "code": "J9600",
+                    "display": "Acute respiratory failure, unspecified whether with hypoxia or hypercapnia"
                   }
                 ]
               },
@@ -905,9 +905,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": 76571007,
-                    "display": "Septic shock (disorder)"
+                    "system": "ICD-10",
+                    "code": "R6521",
+                    "display": "Severe sepsis with septic shock"
                   }
                 ]
               }
@@ -1008,9 +1008,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": 65710008,
-                    "display": "Acute respiratory failure (disorder)"
+                    "system": "ICD-10",
+                    "code": "J9600",
+                    "display": "Acute respiratory failure, unspecified whether with hypoxia or hypercapnia"
                   }
                 ]
               },
@@ -1018,9 +1018,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": 76571007,
-                    "display": "Septic shock (disorder)"
+                    "system": "ICD-10",
+                    "code": "R6521",
+                    "display": "Severe sepsis with septic shock"
                   }
                 ]
               }
@@ -1056,9 +1056,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": 65710008,
-                    "display": "Acute respiratory failure (disorder)"
+                    "system": "ICD-10",
+                    "code": "J9600",
+                    "display": "Acute respiratory failure, unspecified whether with hypoxia or hypercapnia"
                   }
                 ]
               },
@@ -1066,9 +1066,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": 76571007,
-                    "display": "Septic shock (disorder)"
+                    "system": "ICD-10",
+                    "code": "R6521",
+                    "display": "Severe sepsis with septic shock"
                   }
                 ]
               }
@@ -1103,9 +1103,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": 76571007,
-                    "display": "Septic shock (disorder)"
+                    "system": "ICD-10",
+                    "code": "R6521",
+                    "display": "Severe sepsis with septic shock"
                   }
                 ]
               }
@@ -1126,9 +1126,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": 76571007,
-                "display": "Septic shock (disorder)"
+                "system": "ICD-10",
+                "code": "R6521",
+                "display": "Severe sepsis with septic shock"
               }
             ]
           }

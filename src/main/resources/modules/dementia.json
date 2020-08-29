@@ -79,9 +79,9 @@
       "assign_to_attribute": "Type of Alzheimer's",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "26929004",
-          "display": "Alzheimer's disease (disorder)"
+          "system": "ICD-10",
+          "code": "G309",
+          "display": "Alzheimer's disease, unspecified"
         }
       ],
       "direct_transition": "NoImpairment"
@@ -101,9 +101,9 @@
       "assign_to_attribute": "Type of Alzheimer's",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "230265002",
-          "display": "Familial Alzheimer's disease of early onset (disorder)"
+          "system": "ICD-10",
+          "code": "G300",
+          "display": "Alzheimer's disease with early onset"
         }
       ],
       "direct_transition": "NoImpairment"
@@ -686,9 +686,9 @@
       "target_encounter": "PneumoniaEncounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "233604007",
-          "display": "Pneumonia"
+          "system": "ICD-10",
+          "code": "J189",
+          "display": "Pneumonia, unspecified organism"
         }
       ],
       "remarks": [

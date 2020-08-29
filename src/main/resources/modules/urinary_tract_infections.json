@@ -129,9 +129,9 @@
       "assign_to_attribute": "uti",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "301011002",
-          "display": "Escherichia coli urinary tract infection"
+          "system": "ICD-10",
+          "code": "B9620",
+          "display": "Unspecified Escherichia coli [E. coli] as the cause of diseases classified elsewhere"
         }
       ],
       "direct_transition": "UTI_Symptom1"
@@ -142,9 +142,9 @@
       "assign_to_attribute": "uti",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "38822007",
-          "display": "Cystitis"
+          "system": "ICD-10",
+          "code": "N3090",
+          "display": "Cystitis, unspecified without hematuria"
         }
       ],
       "direct_transition": "UTI_Symptom1"
@@ -155,9 +155,9 @@
       "assign_to_attribute": "uti",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "45816000",
-          "display": "Pyelonephritis"
+          "system": "ICD-10",
+          "code": "N12",
+          "display": "Tubulo-interstitial nephritis, not specified as acute or chronic"
         }
       ],
       "direct_transition": "UTI_Symptom1"
@@ -472,9 +472,9 @@
       "target_encounter": "UTI_Diagnosis",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "197927001",
-          "display": "Recurrent urinary tract infection"
+          "system": "ICD-10",
+          "code": "N390",
+          "display": "Urinary tract infection, site not specified"
         }
       ],
       "direct_transition": "Wait_For_Recurring_UTI"

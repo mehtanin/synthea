@@ -71,9 +71,9 @@
       "target_encounter": "CHF initial workup encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 88805009,
-          "display": "Chronic congestive heart failure (disorder)"
+          "system": "ICD‑10",
+          "code": "I509",
+          "display": "Heart failure, unspecified"
         }
       ],
       "direct_transition": "CHF initial workup encounter"

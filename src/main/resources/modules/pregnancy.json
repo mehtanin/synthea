@@ -58,9 +58,9 @@
       "target_encounter": "Prenatal_Initial_Visit",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "72892002",
-          "display": "Normal pregnancy"
+          "system": "ICD-10",
+          "code": "Z3400",
+          "display": "Encounter for supervision of normal first pregnancy, unspecified trimester"
         }
       ],
       "direct_transition": "Delay_Eight_Weeks"
@@ -563,9 +563,9 @@
       "target_encounter": "Prenatal_Initial_Visit",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "47200007",
-          "display": "Non-low risk pregnancy"
+          "system": "ICD-10",
+          "code": "Z3490",
+          "display": "Encounter for supervision of normal pregnancy, unspecified, unspecified trimester"
         }
       ],
       "assign_to_attribute": "non_low_risk_pregnancy",
@@ -970,9 +970,9 @@
       "target_encounter": "Week_32_Visit",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "398254007",
-          "display": "Preeclampsia"
+          "system": "ICD-10",
+          "code": "O1490",
+          "display": "Unspecified pre-eclampsia, unspecified trimester"
         }
       ],
       "assign_to_attribute": "pregnancy_complication",
@@ -1069,9 +1069,9 @@
       "target_encounter": "Week_36_Visit",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "198992004",
-          "display": "Antepartum eclampsia"
+          "system": "ICD-10",
+          "code": "O1500",
+          "display": "Eclampsia complicating pregnancy, unspecified trimester"
         }
       ],
       "assign_to_attribute": "pregnancy_complication",
@@ -1665,9 +1665,9 @@
       "target_encounter": "Prenatal_Initial_Visit",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "19169002",
-          "display": "Miscarriage in first trimester"
+          "system": "ICD-10",
+          "code": "O039",
+          "display": "Complete or unspecified spontaneous abortion without complication"
         }
       ],
       "assign_to_attribute": "miscarriage",
@@ -1695,9 +1695,9 @@
       "target_encounter": "Week_15_Visit",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "85116003",
-          "display": "Miscarriage in second trimester"
+          "system": "ICD-10",
+          "code": "O039",
+          "display": "Complete or unspecified spontaneous abortion without complication"
         }
       ],
       "assign_to_attribute": "miscarriage",
@@ -1721,9 +1721,9 @@
       "target_encounter": "Prenatal_Initial_Visit",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "156073000",
-          "display": "Fetus with unknown complication"
+          "system": "ICD-10",
+          "code": "O864",
+          "display": "Pyrexia of unknown origin following delivery"
         }
       ],
       "assign_to_attribute": "fatal_pregnancy_complication",
@@ -1734,9 +1734,9 @@
       "target_encounter": "Prenatal_Initial_Visit",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "35999006",
-          "display": "Blighted ovum"
+          "system": "ICD-10",
+          "code": "O020",
+          "display": "Blighted ovum and nonhydatidiform mole"
         }
       ],
       "assign_to_attribute": "fatal_pregnancy_complication",
@@ -1747,9 +1747,9 @@
       "target_encounter": "Prenatal_Initial_Visit",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "79586000",
-          "display": "Tubal pregnancy"
+          "system": "ICD-10",
+          "code": "O00109",
+          "display": "Unspecified tubal pregnancy without intrauterine pregnancy"
         }
       ],
       "assign_to_attribute": "fatal_pregnancy_complication",
@@ -1824,9 +1824,9 @@
       ],
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "267253006",
-          "display": "Fetus with chromosomal abnormality"
+          "system": "ICD-10",
+          "code": "O351XX0",
+          "display": "Maternal care for (suspected) chromosomal abnormality in fetus (not applicable or unspecified)"
         }
       ],
       "direct_transition": "End_Miscarriage_Encounter"
@@ -1837,9 +1837,9 @@
       "assign_to_attribute": "fatal_pregnancy_complication",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "37849005",
-          "display": "Congenital uterine anomaly"
+          "system": "ICD-10",
+          "code": "Q519",
+          "display": "Congenital malformation of uterus and cervix, unspecified"
         }
       ],
       "direct_transition": "End_Miscarriage_Encounter"
@@ -1850,9 +1850,9 @@
       "assign_to_attribute": "fatal_pregnancy_complication",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "609496007",
-          "display": "Complication occuring during pregnancy"
+          "system": "ICD-10",
+          "code": "O2690",
+          "display": "Pregnancy related conditions, unspecified, unspecified trimester"
         }
       ],
       "direct_transition": "End_Miscarriage_Encounter"
