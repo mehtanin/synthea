@@ -409,12 +409,6 @@ public abstract class Exporter {
       e.printStackTrace();
     }
 
-    try {
-      QuestionnairesExporterR4.export(generator.stop);
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-
     Config.set("exporter.fhir.bulk_data", bulk);
 
     if (Boolean.parseBoolean(Config.get("exporter.cost_access_outcomes_report"))) {
