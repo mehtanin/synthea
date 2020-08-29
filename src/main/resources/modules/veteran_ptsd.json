@@ -159,9 +159,9 @@
       "target_encounter": "PTSD_Encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 47505003,
-          "display": "Posttraumatic stress disorder"
+          "system": "ICD-10",
+          "code": "F4310",
+          "display": "Post-traumatic stress disorder, unspecified"
         }
       ],
       "direct_transition": "PTSD_Encounter"
@@ -351,9 +351,9 @@
       "target_encounter": "Initial_Psychiatric_PTSD_Encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 47505003,
-          "display": "Posttraumatic stress disorder"
+          "system": "ICD-10",
+          "code": "F4310",
+          "display": "Post-traumatic stress disorder, unspecified"
         }
       ],
       "distributed_transition": [
@@ -658,9 +658,9 @@
       "target_encounter": "Initial_Psychiatric_PTSD_Encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 225444004,
-          "display": "At risk for suicide (finding)"
+          "system": "ICD-10",
+          "code": "R45851",
+          "display": "Suicidal ideations"
         }
       ],
       "direct_transition": "Inpatient Suicide Assessment"

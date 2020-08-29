@@ -97,9 +97,9 @@
       "target_encounter": "RA_Diagnosis",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "69896004",
-          "display": "Rheumatoid arthritis"
+          "system": "ICD-10",
+          "code": "M069",
+          "display": "Rheumatoid arthritis, unspecified"
         }
       ],
       "direct_transition": "RA_Diagnosis"

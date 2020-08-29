@@ -341,9 +341,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "44054006",
-                    "display": "Diabetes"
+                    "system": "ICD-10",
+                    "code": "E119",
+                    "display": "Type 2 diabetes mellitus without complications"
                   }
                 ]
               },
@@ -351,8 +351,8 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "15777000",
+                    "system": "ICD-10",
+                    "code": "R7303",
                     "display": "Prediabetes"
                   }
                 ]
@@ -377,9 +377,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "44054006",
-                    "display": "Diabetes"
+                    "system": "ICD-10",
+                    "code": "E119",
+                    "display": "Type 2 diabetes mellitus without complications"
                   }
                 ]
               },
@@ -422,9 +422,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "44054006",
-                "display": "Diabetes"
+                "system": "ICD-10",
+                "code": "E119",
+                "display": "Type 2 diabetes mellitus without complications"
               }
             ]
           },
@@ -544,9 +544,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "44054006",
-                    "display": "Diabetes"
+                    "system": "ICD-10",
+                    "code": "E119",
+                    "display": "Type 2 diabetes mellitus without complications"
                   }
                 ]
               },
@@ -554,9 +554,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "38341003",
-                    "display": "Hypertension"
+                    "system": "ICD-10",
+                    "code": "I10",
+                    "display": "Essential (primary) hypertension"
                   }
                 ]
               }

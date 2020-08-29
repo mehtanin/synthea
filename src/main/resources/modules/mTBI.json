@@ -52,9 +52,9 @@
       "target_encounter": "Wellness Encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 127295002,
-          "display": "Traumatic brain injury (disorder)"
+          "system": "ICD‑10",
+          "code": "S069X0S",
+          "display": "Unspecified intracranial injury without loss of consciousness"
         }
       ],
       "direct_transition": "Wellness Encounter"

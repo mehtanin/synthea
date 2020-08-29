@@ -321,9 +321,9 @@
       "target_encounter": "Prostate_Cancer_Therapy",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 126906006,
-          "display": "Neoplasm of prostate"
+          "system": "ICD-10",
+          "code": "D4959",
+          "display": "Neoplasm of unspecified behavior of other genitourinary organ"
         }
       ],
       "direct_transition": "biopsy_visit_end"
@@ -541,9 +541,9 @@
       "target_encounter": "Prostate_Cancer_Therapy",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 314994000,
-          "display": "Metastasis from malignant tumor of prostate (disorder)"
+          "system": "ICD-10",
+          "code": "C61",
+          "display": "Malignant neoplasm of prostate"
         }
       ],
       "direct_transition": "end_cancer_therapy encounter"
@@ -553,9 +553,9 @@
       "target_encounter": "Prostate_Cancer_Therapy",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 92691004,
-          "display": "Carcinoma in situ of prostate (disorder)"
+          "system": "ICD-10",
+          "code": "D075",
+          "display": "Carcinoma in situ of prostate"
         }
       ],
       "direct_transition": "Record_CMP"

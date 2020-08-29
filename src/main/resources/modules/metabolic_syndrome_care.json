@@ -76,9 +76,9 @@
       "assign_to_attribute": "hyperglycemia",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 80394007,
-          "display": "Hyperglycemia (disorder)"
+          "system": "ICD-10",
+          "code": "R739",
+          "display": "Hyperglycemia, unspecified"
         }
       ],
       "direct_transition": "Triglyceride_Check"
@@ -105,9 +105,9 @@
       "assign_to_attribute": "hypertriglyceridemia",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 302870006,
-          "display": "Hypertriglyceridemia (disorder)"
+          "system": "ICD-10",
+          "code": "E781",
+          "display": "Pure hyperglyceridemia"
         }
       ],
       "direct_transition": "Metabolic_Check"
@@ -160,9 +160,9 @@
       "assign_to_attribute": "metabolic_syndrome",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 237602007,
-          "display": "Metabolic syndrome X (disorder)"
+          "system": "ICD-10",
+          "code": "E8881",
+          "display": "Metabolic syndrome"
         }
       ],
       "direct_transition": "Diagnosis"
@@ -293,8 +293,8 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "15777000",
+          "system": "ICD-10",
+          "code": "R7303",
           "display": "Prediabetes"
         }
       ],
@@ -329,9 +329,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "44054006",
-          "display": "Diabetes"
+          "system": "ICD-10",
+          "code": "E119",
+          "display": "Type 2 diabetes mellitus without complications"
         }
       ],
       "assign_to_attribute": "diabetes_stage",
@@ -669,9 +669,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "127013003",
-                "display": "Diabetic renal disease (disorder)"
+                "system": "ICD-10",
+                "code": "E1121",
+                "display": "Type 2 diabetes mellitus with diabetic nephropathy"
               }
             ]
           },
@@ -916,9 +916,9 @@
                   "condition_type": "Active Condition",
                   "codes": [
                     {
-                      "system": "SNOMED-CT",
-                      "code": "127013003",
-                      "display": "Diabetic renal disease (disorder)"
+                      "system": "ICD-10",
+                      "code": "E1121",
+                      "display": "Type 2 diabetes mellitus with diabetic nephropathy"
                     }
                   ]
                 }
@@ -940,9 +940,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "127013003",
-                    "display": "Diabetic renal disease (disorder)"
+                    "system": "ICD-10",
+                    "code": "E1121",
+                    "display": "Type 2 diabetes mellitus with diabetic nephropathy"
                   }
                 ]
               }
@@ -959,9 +959,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "127013003",
-          "display": "Diabetic renal disease (disorder)"
+          "system": "ICD-10",
+          "code": "E1121",
+          "display": "Type 2 diabetes mellitus with diabetic nephropathy"
         }
       ],
       "direct_transition": "Check_Microalbuminuria"
@@ -970,9 +970,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "127013003",
-          "display": "Diabetic renal disease (disorder)"
+          "system": "ICD-10",
+          "code": "E1121",
+          "display": "Type 2 diabetes mellitus with diabetic nephropathy"
         }
       ],
       "direct_transition": "Check_Microalbuminuria"
@@ -995,9 +995,9 @@
                   "condition_type": "Active Condition",
                   "codes": [
                     {
-                      "system": "SNOMED-CT",
-                      "code": "90781000119102",
-                      "display": "Microalbuminuria due to type 2 diabetes mellitus (disorder)"
+                      "system": "ICD-10",
+                      "code": "E1129",
+                      "display": "Type 2 diabetes mellitus with other diabetic kidney complication"
                     }
                   ]
                 }
@@ -1019,9 +1019,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "90781000119102",
-                    "display": "Microalbuminuria due to type 2 diabetes mellitus (disorder)"
+                    "system": "ICD-10",
+                    "code": "E1129",
+                    "display": "Type 2 diabetes mellitus with other diabetic kidney complication"
                   }
                 ]
               }
@@ -1038,9 +1038,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "90781000119102",
-          "display": "Microalbuminuria due to type 2 diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E1129",
+          "display": "Type 2 diabetes mellitus with other diabetic kidney complication"
         }
       ],
       "direct_transition": "Check_Proteinuria"
@@ -1049,9 +1049,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "90781000119102",
-          "display": "Microalbuminuria due to type 2 diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E1129",
+          "display": "Type 2 diabetes mellitus with other diabetic kidney complication"
         }
       ],
       "direct_transition": "Check_Proteinuria"
@@ -1074,9 +1074,9 @@
                   "condition_type": "Active Condition",
                   "codes": [
                     {
-                      "system": "SNOMED-CT",
-                      "code": "157141000119108",
-                      "display": "Proteinuria due to type 2 diabetes mellitus (disorder)"
+                      "system": "ICD-10",
+                      "code": "R809",
+                      "display": "Proteinuria, unspecified"
                     }
                   ]
                 }
@@ -1098,9 +1098,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "157141000119108",
-                    "display": "Proteinuria due to type 2 diabetes mellitus (disorder)"
+                    "system": "ICD-10",
+                    "code": "R809",
+                    "display": "Proteinuria, unspecified"
                   }
                 ]
               }
@@ -1117,9 +1117,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "157141000119108",
-          "display": "Proteinuria due to type 2 diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "R809",
+          "display": "Proteinuria, unspecified"
         }
       ],
       "direct_transition": "Check_End_Stage_Renal_Disease"
@@ -1128,9 +1128,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "157141000119108",
-          "display": "Proteinuria due to type 2 diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "R809",
+          "display": "Proteinuria, unspecified"
         }
       ],
       "direct_transition": "Check_End_Stage_Renal_Disease"
@@ -1154,9 +1154,9 @@
                   "condition_type": "Active Condition",
                   "codes": [
                     {
-                      "system": "SNOMED-CT",
-                      "code": "46177005",
-                      "display": "End stage renal disease (disorder)"
+                      "system": "ICD-10",
+                      "code": "N186",
+                      "display": "End stage renal disease"
                     }
                   ]
                 }
@@ -1178,9 +1178,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "46177005",
-                    "display": "End stage renal disease (disorder)"
+                    "system": "ICD-10",
+                    "code": "N186",
+                    "display": "End stage renal disease"
                   }
                 ]
               }
@@ -1197,9 +1197,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "46177005",
-          "display": "End stage renal disease (disorder)"
+          "system": "ICD-10",
+          "code": "N186",
+          "display": "End stage renal disease"
         }
       ],
       "direct_transition": "Record_MetabolicPanel_5",
@@ -1209,9 +1209,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "46177005",
-          "display": "End stage renal disease (disorder)"
+          "system": "ICD-10",
+          "code": "N186",
+          "display": "End stage renal disease"
         }
       ],
       "direct_transition": "Check_Retinopathy"
@@ -1234,9 +1234,9 @@
                   "condition_type": "Active Condition",
                   "codes": [
                     {
-                      "system": "SNOMED-CT",
-                      "code": "422034002",
-                      "display": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)"
+                      "system": "ICD-10",
+                      "code": "E11319",
+                      "display": "Type 2 diabetes mellitus with unspecified diabetic retinopathy without macular edema"
                     }
                   ]
                 }
@@ -1258,9 +1258,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "422034002",
-                    "display": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)"
+                    "system": "ICD-10",
+                    "code": "E11319",
+                    "display": "Type 2 diabetes mellitus with unspecified diabetic retinopathy without macular edema"
                   }
                 ]
               }
@@ -1277,9 +1277,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "422034002",
-          "display": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E11319",
+          "display": "Type 2 diabetes mellitus with unspecified diabetic retinopathy without macular edema"
         }
       ],
       "direct_transition": "Check_Nonproliferative_Retinopathy"
@@ -1288,9 +1288,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "422034002",
-          "display": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E11319",
+          "display": "Type 2 diabetes mellitus with unspecified diabetic retinopathy without macular edema"
         }
       ],
       "direct_transition": "Check_Nonproliferative_Retinopathy"
@@ -1313,9 +1313,9 @@
                   "condition_type": "Active Condition",
                   "codes": [
                     {
-                      "system": "SNOMED-CT",
-                      "code": "1551000119108",
-                      "display": "Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus (disorder)"
+                      "system": "ICD-10",
+                      "code": "E113299",
+                      "display": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema (unspecified eye)"
                     }
                   ]
                 }
@@ -1337,9 +1337,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "1551000119108",
-                    "display": "Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus (disorder)"
+                    "system": "ICD-10",
+                    "code": "E113299",
+                    "display": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema (unspecified eye)"
                   }
                 ]
               }
@@ -1356,9 +1356,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "1551000119108",
-          "display": "Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E113299",
+          "display": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema (unspecified eye)"
         }
       ],
       "direct_transition": "Check_Proliferative_Retinopathy"
@@ -1367,9 +1367,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "1551000119108",
-          "display": "Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E113299",
+          "display": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema (unspecified eye)"
         }
       ],
       "direct_transition": "Check_Proliferative_Retinopathy"
@@ -1392,9 +1392,9 @@
                   "condition_type": "Active Condition",
                   "codes": [
                     {
-                      "system": "SNOMED-CT",
-                      "code": "1501000119109",
-                      "display": "Proliferative diabetic retinopathy due to type II diabetes mellitus (disorder)"
+                      "system": "ICD-10",
+                      "code": "E113599",
+                      "display": "Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema (unspecified eye)"
                     }
                   ]
                 }
@@ -1416,9 +1416,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "1501000119109",
-                    "display": "Proliferative diabetic retinopathy due to type II diabetes mellitus (disorder)"
+                    "system": "ICD-10",
+                    "code": "E113599",
+                    "display": "Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema (unspecified eye)"
                   }
                 ]
               }
@@ -1435,9 +1435,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "1501000119109",
-          "display": "Proliferative diabetic retinopathy due to type II diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E113599",
+          "display": "Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema (unspecified eye)"
         }
       ],
       "direct_transition": "Check_Macular_Edema"
@@ -1446,9 +1446,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "1501000119109",
-          "display": "Proliferative diabetic retinopathy due to type II diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E113599",
+          "display": "Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema (unspecified eye)"
         }
       ],
       "direct_transition": "Check_Macular_Edema"
@@ -1471,9 +1471,9 @@
                   "condition_type": "Active Condition",
                   "codes": [
                     {
-                      "system": "SNOMED-CT",
-                      "code": "97331000119101",
-                      "display": "Macular edema and retinopathy due to type 2 diabetes mellitus (disorder)"
+                      "system": "ICD-10",
+                      "code": "E11311",
+                      "display": "Type 2 diabetes mellitus with unspecified diabetic retinopathy with macular edema"
                     }
                   ]
                 }
@@ -1495,9 +1495,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "97331000119101",
-                    "display": "Macular edema and retinopathy due to type 2 diabetes mellitus (disorder)"
+                    "system": "ICD-10",
+                    "code": "E11311",
+                    "display": "Type 2 diabetes mellitus with unspecified diabetic retinopathy with macular edema"
                   }
                 ]
               }
@@ -1514,9 +1514,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "97331000119101",
-          "display": "Macular edema and retinopathy due to type 2 diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E11311",
+          "display": "Type 2 diabetes mellitus with unspecified diabetic retinopathy with macular edema"
         }
       ],
       "direct_transition": "Check_Blindness"
@@ -1525,9 +1525,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "97331000119101",
-          "display": "Macular edema and retinopathy due to type 2 diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E11311",
+          "display": "Type 2 diabetes mellitus with unspecified diabetic retinopathy with macular edema"
         }
       ],
       "direct_transition": "Check_Blindness"
@@ -1550,9 +1550,9 @@
                   "condition_type": "Active Condition",
                   "codes": [
                     {
-                      "system": "SNOMED-CT",
-                      "code": "60951000119105",
-                      "display": "Blindness due to type 2 diabetes mellitus (disorder)"
+                      "system": "ICD-10",
+                      "code": "E1139",
+                      "display": "Type 2 diabetes mellitus with other diabetic ophthalmic complication"
                     }
                   ]
                 }
@@ -1574,9 +1574,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "60951000119105",
-                    "display": "Blindness due to type 2 diabetes mellitus (disorder)"
+                    "system": "ICD-10",
+                    "code": "E1139",
+                    "display": "Type 2 diabetes mellitus with other diabetic ophthalmic complication"
                   }
                 ]
               }
@@ -1593,9 +1593,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "60951000119105",
-          "display": "Blindness due to type 2 diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E1139",
+          "display": "Type 2 diabetes mellitus with other diabetic ophthalmic complication"
         }
       ],
       "direct_transition": "Check_Neuropathy"
@@ -1604,9 +1604,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "60951000119105",
-          "display": "Blindness due to type 2 diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E1139",
+          "display": "Type 2 diabetes mellitus with other diabetic ophthalmic complication"
         }
       ],
       "direct_transition": "Check_Neuropathy"
@@ -1629,9 +1629,9 @@
                   "condition_type": "Active Condition",
                   "codes": [
                     {
-                      "system": "SNOMED-CT",
-                      "code": "368581000119106",
-                      "display": "Neuropathy due to type 2 diabetes mellitus (disorder)"
+                      "system": "ICD-10",
+                      "code": "E1140",
+                      "display": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified"
                     }
                   ]
                 }
@@ -1653,9 +1653,9 @@
                 "condition_type": "Active Condition",
                 "codes": [
                   {
-                    "system": "SNOMED-CT",
-                    "code": "368581000119106",
-                    "display": "Neuropathy due to type 2 diabetes mellitus (disorder)"
+                    "system": "ICD-10",
+                    "code": "E1140",
+                    "display": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified"
                   }
                 ]
               }
@@ -1672,9 +1672,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "368581000119106",
-          "display": "Neuropathy due to type 2 diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E1140",
+          "display": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified"
         }
       ],
       "direct_transition": "Consider_Procedures"
@@ -1683,9 +1683,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "368581000119106",
-          "display": "Neuropathy due to type 2 diabetes mellitus (disorder)"
+          "system": "ICD-10",
+          "code": "E1140",
+          "display": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified"
         }
       ],
       "direct_transition": "Consider_Procedures"
@@ -1717,9 +1717,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "368581000119106",
-                "display": "Neuropathy due to type 2 diabetes mellitus (disorder)"
+                "system": "ICD-10",
+                "code": "E1140",
+                "display": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified"
               }
             ]
           },
@@ -1983,9 +1983,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "161622006",
-          "display": "History of lower limb amputation (situation)"
+          "system": "ICD-10",
+          "code": "Z899",
+          "display": "Acquired absence of limb, unspecified"
         }
       ],
       "direct_transition": "Recovery_After_Amputation"
@@ -1994,9 +1994,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "429280009",
-          "display": "History of amputation of foot (situation)"
+          "system": "ICD-10",
+          "code": "Z89439",
+          "display": "Acquired absence of unspecified foot"
         }
       ],
       "direct_transition": "Recovery_After_Amputation"
@@ -2151,9 +2151,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "161621004",
-          "display": "History of upper limb amputation (situation)"
+          "system": "ICD-10",
+          "code": "Z89209",
+          "display": "Acquired absence of unspecified upper limb, unspecified level"
         }
       ],
       "direct_transition": "Recovery_After_Amputation"
@@ -2162,9 +2162,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "698423002",
-          "display": "History of disarticulation at wrist (situation)"
+          "system": "ICD-10",
+          "code": "Z89129",
+          "display": "Acquired absence of unspecified wrist"
         }
       ],
       "direct_transition": "Recovery_After_Amputation"
@@ -2234,8 +2234,8 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 431855005,
+          "system": "ICD-10",
+          "code": "N181",
           "display": "Chronic kidney disease stage 1 (disorder)"
         }
       ],
@@ -2245,8 +2245,8 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 431856006,
+          "system": "ICD-10",
+          "code": "N182",
           "display": "Chronic kidney disease stage 2 (disorder)"
         }
       ],
@@ -2256,8 +2256,8 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 433144002,
+          "system": "ICD-10",
+          "code": "N183",
           "display": "Chronic kidney disease stage 3 (disorder)"
         }
       ],
@@ -2268,8 +2268,8 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 431857002,
+          "system": "ICD-10",
+          "code": "N184",
           "display": "Chronic kidney disease stage 4 (disorder)"
         }
       ],
@@ -2307,9 +2307,9 @@
       "target_encounter": "",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 162864005,
-          "display": "Body mass index 30+ - obesity (finding)"
+          "system": "ICD-10",
+          "code": "E669",
+          "display": "Obesity, unspecified"
         }
       ],
       "direct_transition": "End_Wellness_Encounter",
@@ -2321,9 +2321,9 @@
       "target_encounter": "",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 408512008,
-          "display": "Body mass index 40+ - severely obese (finding)"
+          "system": "ICD-10",
+          "code": "Z6841",
+          "display": "Body mass index (BMI) 40.0-44.9, adult"
         }
       ],
       "direct_transition": "End_Wellness_Encounter"

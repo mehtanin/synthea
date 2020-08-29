@@ -54,9 +54,9 @@
       "assign_to_attribute": "osteoarthritis",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "201834006",
-          "display": "Localized, primary osteoarthritis of the hand"
+          "system": "ICD-10",
+          "code": "M19049",
+          "display": "Primary osteoarthritis, unspecified hand"
         }
       ],
       "direct_transition": "OA_Diagnosis"
@@ -67,9 +67,9 @@
       "assign_to_attribute": "osteoarthritis",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "239873007",
-          "display": "Osteoarthritis of knee"
+          "system": "ICD-10",
+          "code": "M179",
+          "display": "Osteoarthritis of knee, unspecified"
         }
       ],
       "direct_transition": "OA_Diagnosis"
@@ -80,9 +80,9 @@
       "assign_to_attribute": "osteoarthritis",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "239872002",
-          "display": "Osteoarthritis of hip"
+          "system": "ICD-10",
+          "code": "M169",
+          "display": "Osteoarthritis of hip, unspecified"
         }
       ],
       "direct_transition": "OA_Diagnosis"

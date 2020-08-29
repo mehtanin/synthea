@@ -145,9 +145,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "64859006",
-                "display": "Osteoporosis (disorder)"
+                "system": "ICD-10",
+                "code": "M810",
+                "display": "Age-related osteoporosis without current pathological fracture"
               }
             ]
           },
@@ -194,9 +194,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "64859006",
-          "display": "Osteoporosis (disorder)"
+          "system": "ICD-10",
+          "code": "M810",
+          "display": "Age-related osteoporosis without current pathological fracture"
         }
       ],
       "direct_transition": "Consider_Medication"

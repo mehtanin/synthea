@@ -116,9 +116,9 @@
       "target_encounter": "Allergic_Rhinitis_Diagnosis",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "367498001",
-          "display": "Seasonal allergic rhinitis"
+          "system": "ICD-10",
+          "code": "J302",
+          "display": "Other seasonal allergic rhinitis"
         }
       ],
       "direct_transition": "Allergic_Rhinitis_Symptom1"
@@ -129,9 +129,9 @@
       "target_encounter": "Allergic_Rhinitis_Diagnosis",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "446096008",
-          "display": "Perennial allergic rhinitis"
+          "system": "ICD-10",
+          "code": "J3089",
+          "display": "Other allergic rhinitis"
         }
       ],
       "direct_transition": "Allergic_Rhinitis_Symptom1"
@@ -142,9 +142,9 @@
       "target_encounter": "Allergic_Rhinitis_Diagnosis",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "232353008",
-          "display": "Perennial allergic rhinitis with seasonal variation"
+          "system": "ICD-10",
+          "code": "J3089",
+          "display": "Other allergic rhinitis"
         }
       ],
       "direct_transition": "Allergic_Rhinitis_Symptom1"
@@ -261,9 +261,9 @@
               "condition_type": "Active Condition",
               "codes": [
                 {
-                  "system": "SNOMED-CT",
-                  "code": "419263009",
-                  "display": "Allergy to tree pollen"
+                  "system": "ICD-10",
+                  "code": "J301",
+                  "display": "Allergic rhinitis due to pollen"
                 }
               ]
             },
@@ -271,9 +271,9 @@
               "condition_type": "Active Condition",
               "codes": [
                 {
-                  "system": "SNOMED-CT",
-                  "code": "418689008",
-                  "display": "Allergy to grass pollen"
+                  "system": "ICD-10",
+                  "code": "J301",
+                  "display": "Allergic rhinitis due to pollen"
                 }
               ]
             },
@@ -281,9 +281,9 @@
               "condition_type": "Active Condition",
               "codes": [
                 {
-                  "system": "SNOMED-CT",
-                  "code": "232347008",
-                  "display": "Dander (animal) allergy"
+                  "system": "ICD-10",
+                  "code": "Z9109",
+                  "display": "Other allergy status, other than to drugs and biological substances"
                 }
               ]
             },
@@ -291,9 +291,9 @@
               "condition_type": "Active Condition",
               "codes": [
                 {
-                  "system": "SNOMED-CT",
-                  "code": "232350006",
-                  "display": "House dust mite allergy"
+                  "system": "ICD-10",
+                  "code": "J3089",
+                  "display": "Other allergic rhinitis"
                 }
               ]
             },
@@ -301,9 +301,9 @@
               "condition_type": "Active Condition",
               "codes": [
                 {
-                  "system": "SNOMED-CT",
-                  "code": "419474003",
-                  "display": "Allergy to mould"
+                  "system": "ICD-10",
+                  "code": "Z888",
+                  "display": "Allergy status to other drugs, medicaments and biological substances status"
                 }
               ]
             }

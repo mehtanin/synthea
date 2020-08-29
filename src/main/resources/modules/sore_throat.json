@@ -78,9 +78,9 @@
       "assign_to_attribute": "Sore Throat Condition",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "195662009",
-          "display": "Acute viral pharyngitis (disorder)"
+          "system": "ICD-10",
+          "code": "J029",
+          "display": "Acute pharyngitis, unspecified"
         }
       ],
       "direct_transition": "Viral_Symptom_1"
@@ -181,9 +181,9 @@
       "assign_to_attribute": "Sore Throat Condition",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "43878008",
-          "display": "Streptococcal sore throat (disorder)"
+          "system": "ICD-10",
+          "code": "J020",
+          "display": "Streptococcal pharyngitis"
         }
       ],
       "direct_transition": "Bacterial_Symptom_1"
@@ -246,9 +246,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "43878008",
-                "display": "Streptococcal sore throat (disorder)"
+                "system": "ICD-10",
+                "code": "J020",
+                "display": "Streptococcal pharyngitis"
               }
             ]
           },
@@ -490,9 +490,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "43878008",
-                "display": "Streptococcal sore throat (disorder)"
+                "system": "ICD-10",
+                "code": "J020",
+                "display": "Streptococcal pharyngitis"
               }
             ]
           },

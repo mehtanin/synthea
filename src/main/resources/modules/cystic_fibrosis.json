@@ -75,9 +75,9 @@
       "assign_to_attribute": "Cystic_Fibrosis",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 190905008,
-          "display": "Cystic Fibrosis"
+          "system": "ICD-10",
+          "code": "E849",
+          "display": "Cystic fibrosis, unspecified"
         }
       ],
       "complex_transition": [
@@ -330,9 +330,9 @@
       "target_encounter": "Fibrosis_Screening",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 206523001,
-          "display": "Meconium Ileus"
+          "system": "ICD-10",
+          "code": "P760",
+          "display": "Meconium plug syndrome"
         }
       ],
       "direct_transition": "Fibrosis_Screening",
@@ -364,9 +364,9 @@
       "target_encounter": "Fibrosis_Screening",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 427089005,
-          "display": "Male Infertility"
+          "system": "ICD‑10",
+          "code": "N469",
+          "display": "Male infertility, unspecified"
         }
       ],
       "direct_transition": "chronic_cough"
@@ -376,9 +376,9 @@
       "target_encounter": "Fibrosis_Screening",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 707577004,
-          "display": "Female Infertility"
+          "system": "ICD-10",
+          "code": "N979",
+          "display": "Female infertility, unspecified"
         }
       ],
       "direct_transition": "chronic_cough",
@@ -890,9 +890,9 @@
       "target_encounter": "Quarterly_Checkup",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 427089005,
-          "display": "Diabetes from Cystic Fibrosis"
+          "system": "ICD-10",
+          "code": "E089",
+          "display": "Diabetes mellitus due to underlying condition without complications"
         }
       ],
       "direct_transition": "diatbetesState",
@@ -1186,9 +1186,9 @@
       "target_encounter": "Quarterly_Checkup",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 11218009,
-          "display": "Infection caused by Pseudomonas aeruginosa"
+          "system": "ICD-10",
+          "code": "B965",
+          "display": "Pseudomonas (aeruginosa) (mallei) (pseudomallei) as the cause of diseases classified elsewhere"
         }
       ],
       "direct_transition": "Quarterly_Checkup"
@@ -1198,9 +1198,9 @@
       "target_encounter": "Quarterly_Checkup",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 406602003,
-          "display": "Infection caused by Staphylococcus aureus"
+          "system": "ICD-10",
+          "code": "B9561",
+          "display": "Methicillin susceptible Staphylococcus aureus infection as the cause of diseases classified elsewhere"
         }
       ],
       "direct_transition": "Quarterly_Checkup"
@@ -1349,9 +1349,9 @@
       "target_encounter": "Emergency_Room",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 448813005,
-          "display": "Sepsis caused by Pseudomonas (disorder)"
+          "system": "ICD-10",
+          "code": 	"A4152",
+          "display": "Sepsis due to Pseudomonas"
         }
       ],
       "direct_transition": "low_blood_pressure"
@@ -1500,9 +1500,9 @@
       "target_encounter": "Emergency_Room",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 448417001,
-          "display": "Sepsis caused by Staphylococcus aureus"
+          "system": "ICD_10",
+          "code": "A4101",
+          "display": "Sepsis due to Methicillin susceptible Staphylococcus aureus"
         }
       ],
       "direct_transition": "low_blood_pressure"
@@ -1650,9 +1650,9 @@
       "target_encounter": "Emergency_Room",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 65710008,
-          "display": "Acute respiratory failure (disorder)"
+          "system": "ICD-10",
+          "code": "J9600",
+          "display": "Acute respiratory failure, unspecified whether with hypoxia or hypercapnia"
         }
       ],
       "direct_transition": "wheezing"

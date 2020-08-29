@@ -60,9 +60,9 @@
       "assign_to_attribute": "suicide_attempt",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "86849004",
-          "display": "Suicidal deliberate poisoning"
+          "system": "ICD-10",
+          "code": "T50902S",
+          "display": "Poisoning by unspecified drugs, medicaments and biological substances, intentional self-harm (sequela)"
         }
       ],
       "direct_transition": "ED_Visit_For_Attempted_Suicide"
@@ -73,9 +73,9 @@
       "assign_to_attribute": "suicide_attempt",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "287185009",
-          "display": "Attempted suicide - cut/stab"
+          "system": "ICD-10",
+          "code": "X789XXS",
+          "display": "Intentional self-harm by unspecified sharp object (sequela)"
         }
       ],
       "direct_transition": "ED_Visit_For_Attempted_Suicide"
@@ -86,9 +86,9 @@
       "assign_to_attribute": "suicide_attempt",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "287182007",
-          "display": "Attempted suicide - suffocation"
+          "system": "ICD-10",
+          "code": "X838XXS",
+          "display": "Intentional self-harm by other specified means (sequela)"
         }
       ],
       "direct_transition": "ED_Visit_For_Attempted_Suicide"
@@ -293,9 +293,9 @@
       "assign_to_attribute": "suicide",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "287193009",
-          "display": "Suicide - firearms"
+          "system": "ICD-10",
+          "code": "X749XXS",
+          "display": "Intentional self-harm by unspecified firearm discharge (sequela)"
         }
       ],
       "direct_transition": "Death"
@@ -306,9 +306,9 @@
       "assign_to_attribute": "suicide",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "287191006",
-          "display": "Suicide - suffocation"
+          "system": "ICD-10",
+          "code": "X838XXS",
+          "display": "Intentional self-harm by other specified means (sequela)"
         }
       ],
       "direct_transition": "Death"
@@ -319,9 +319,9 @@
       "assign_to_attribute": "suicide",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "86849004",
-          "display": "Suicidal deliberate poisoning"
+          "system": "ICD-10",
+          "code": "T50902S",
+          "display": "Poisoning by unspecified drugs, medicaments and biological substances, intentional self-harm (sequela)"
         }
       ],
       "direct_transition": "Death"
@@ -332,9 +332,9 @@
       "assign_to_attribute": "suicide",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "44301001",
-          "display": "Suicide"
+          "system": "ICD-10",
+          "code": "T1491XS",
+          "display": "Suicide attempt (sequela)"
         }
       ],
       "direct_transition": "Death"

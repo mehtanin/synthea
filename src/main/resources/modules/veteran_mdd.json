@@ -315,9 +315,9 @@
       "target_encounter": "MDD_Encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 36923009,
-          "display": "Major depression, single episode"
+          "system": "ICD-10",
+          "code": "F329",
+          "display": "Major depressive disorder, single episode, unspecified"
         }
       ],
       "direct_transition": "Time Gate"
@@ -387,9 +387,9 @@
       "target_encounter": "Initial_Psychiatric_MDD_Encounter",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 370143000,
-          "display": "Major depression disorder"
+          "system": "ICD-10",
+          "code": "F329",
+          "display": "Major depressive disorder, single episode, unspecified"
         }
       ],
       "distributed_transition": [

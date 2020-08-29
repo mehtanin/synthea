@@ -23,9 +23,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "419263009",
-                "display": "Allergy to tree pollen"
+                "system": "ICD-10",
+                "code": "J301",
+                "display": "Allergic rhinitis due to pollen"
               }
             ]
           },
@@ -54,9 +54,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "419263009",
-          "display": "Allergy to tree pollen"
+          "system": "ICD-10",
+          "code": "J301",
+          "display": "Allergic rhinitis due to pollen"
         }
       ],
       "direct_transition": "Grass_Allergy"
@@ -74,9 +74,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "418689008",
-                "display": "Allergy to grass pollen"
+                "system": "ICD-10",
+                "code": "J301",
+                "display": "Allergic rhinitis due to pollen"
               }
             ]
           },
@@ -105,9 +105,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "418689008",
-          "display": "Allergy to grass pollen"
+          "system": "ICD-10",
+          "code": "J301",
+          "display": "Allergic rhinitis due to pollen"
         }
       ],
       "direct_transition": "Mold_Allergy"
@@ -125,9 +125,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "419474003",
-                "display": "Allergy to mould"
+                "system": "ICD-10",
+                "code": "Z888",
+                "display": "Allergy status to other drugs, medicaments and biological substances status"
               }
             ]
           },
@@ -156,9 +156,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "419474003",
-          "display": "Allergy to mould"
+          "system": "ICD-10",
+          "code": "Z888",
+          "display": "Allergy status to other drugs, medicaments and biological substances status"
         }
       ],
       "direct_transition": "Pet_Dander_Allergy"
@@ -176,9 +176,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "232347008",
-                "display": "Dander (animal) allergy"
+                "system": "ICD-10",
+                "code": "Z9109",
+                "display": "Other allergy status, other than to drugs and biological substances"
               }
             ]
           },
@@ -207,9 +207,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "232347008",
-          "display": "Dander (animal) allergy"
+          "system": "ICD-10",
+          "code": "Z9109",
+          "display": "Other allergy status, other than to drugs and biological substances"
         }
       ],
       "direct_transition": "Mite_Allergy"
@@ -227,9 +227,9 @@
             "condition_type": "Active Condition",
             "codes": [
               {
-                "system": "SNOMED-CT",
-                "code": "232350006",
-                "display": "House dust mite allergy"
+                "system": "ICD-10",
+                "code": "J3089",
+                "display": "Other allergic rhinitis"
               }
             ]
           },
@@ -258,9 +258,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "232350006",
-          "display": "House dust mite allergy"
+          "system": "ICD-10",
+          "code": "J3089",
+          "display": "Other allergic rhinitis"
         }
       ],
       "direct_transition": "Terminal"

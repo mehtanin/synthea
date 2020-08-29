@@ -41,9 +41,9 @@
       "assign_to_attribute": "covid19_bacterial_infection",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 87628006,
-          "display": "Bacterial infectious disease (disorder)"
+          "system": "ICD-10",
+          "code": "A499",
+          "display": "Bacterial infection, unspecified"
         }
       ],
       "direct_transition": "Terminal"

@@ -15,9 +15,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "233604007",
-          "display": "Pneumonia (disorder)"
+          "system": "ICD-10",
+          "code": "J189",
+          "display": "Pneumonia, unspecified organism"
         }
       ],
       "direct_transition": "Hypoxemia",
@@ -27,9 +27,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "67782005",
-          "display": "Acute respiratory distress syndrome (disorder)"
+          "system": "ICD-10",
+          "code": "J80",
+          "display": "Acute respiratory distress syndrome"
         }
       ],
       "direct_transition": "Check Heart Failure",
@@ -39,9 +39,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "770349000",
-          "display": "Sepsis caused by virus (disorder)"
+          "system": "ICD-10",
+          "code": "B349",
+          "display": "Viral infection, unspecified"
         }
       ],
       "complex_transition": [
@@ -75,9 +75,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "76571007",
-          "display": "Septic shock (disorder)"
+          "system": "ICD-10",
+          "code": "R6521",
+          "display": "Severe sepsis with septic shock"
         }
       ],
       "direct_transition": "Terminal",
@@ -122,9 +122,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "84114007",
-          "display": "Heart failure (disorder)"
+          "system": "ICD-10",
+          "code": "I509",
+          "display": "Heart failure, unspecified"
         }
       ],
       "direct_transition": "Check Acute Cardiac Injury",
@@ -134,9 +134,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "86175003",
-          "display": "Injury of heart (disorder)"
+          "system": "ICD-10",
+          "code": "S2690XS",
+          "display": "Unspecified injury of heart, unspecified with or without hemopericardium (sequela)"
         }
       ],
       "direct_transition": "Check Acute Kidney Injury",
@@ -251,9 +251,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "40095003",
-          "display": "Injury of kidney (disorder)"
+          "system": "ICD-10",
+          "code": "S37009S",
+          "display": "Unspecified injury of unspecified kidney (sequela)"
         }
       ],
       "direct_transition": "Check Coagulopathy",
@@ -263,9 +263,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "234466008",
-          "display": "Acquired coagulation disorder (disorder)"
+          "system": "ICD-10",
+          "code": "D688",
+          "display": "Other specified coagulation defects"
         }
       ],
       "direct_transition": "Determine Sepsis",
@@ -320,9 +320,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "65710008",
-          "display": "Acute respiratory failure (disorder)"
+          "system": "ICD-10",
+          "code": "J9600",
+          "display": "Acute respiratory failure, unspecified whether with hypoxia or hypercapnia"
         }
       ],
       "remarks": [
@@ -366,9 +366,9 @@
       "type": "ConditionOnset",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "271825005",
-          "display": "Respiratory distress (finding)"
+          "system": "ICD-10",
+          "code": "R0603",
+          "display": "Acute respiratory distress"
         }
       ],
       "complex_transition": [
@@ -410,9 +410,9 @@
       "target_encounter": "Hospital Inpatient Admission",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 389087006,
-          "display": "Hypoxemia (disorder)"
+          "system": "ICD-10",
+          "code": "R0902",
+          "display": "Hypoxemia"
         }
       ],
       "direct_transition": "Mild Respiratory Distress"

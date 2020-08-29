@@ -60,9 +60,9 @@
       "target_encounter": "ADHD_Diagnosis",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "192127007",
-          "display": "Child attention deficit disorder"
+          "system": "ICD-10",
+          "code": "F909",
+          "display": "Attention-deficit hyperactivity disorder, unspecified type"
         }
       ],
       "direct_transition": "ADHD_Diagnosis"

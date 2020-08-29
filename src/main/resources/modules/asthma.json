@@ -121,9 +121,9 @@
       "assign_to_attribute": "asthma_condition",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "233678006",
-          "display": "Childhood asthma"
+          "system": "ICD-10",
+          "code": "J45909",
+          "display": "Unspecified asthma, uncomplicated"
         }
       ],
       "direct_transition": "Set_Childhood_Asthma"
@@ -140,9 +140,9 @@
       "assign_to_attribute": "asthma_condition",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "195967001",
-          "display": "Asthma"
+          "system": "ICD-10",
+          "code": "J45909",
+          "display": "Unspecified asthma, uncomplicated"
         }
       ],
       "direct_transition": "Set_Adult_Asthma"
@@ -431,9 +431,9 @@
       "assign_to_attribute": "asthma_condition",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": "195967001",
-          "display": "Asthma"
+          "system": "ICD-10",
+          "code": "J45909",
+          "display": "Unspecified asthma, uncomplicated"
         }
       ],
       "direct_transition": "End_Wellness_1"

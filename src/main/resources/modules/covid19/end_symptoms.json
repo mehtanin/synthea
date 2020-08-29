@@ -18,9 +18,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 246677007,
-          "display": "Passive conjunctival congestion (finding)"
+          "system": "ICD-10",
+          "code": "H1189",
+          "display": "Other specified disorders of conjunctiva"
         }
       ],
       "direct_transition": "Cough End"
@@ -29,9 +29,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 68235000,
-          "display": "Nasal congestion (finding)"
+          "system": "ICD-10",
+          "code": "R0981",
+          "display": "Nasal congestion"
         }
       ],
       "direct_transition": "Nausea End"
@@ -40,9 +40,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 25064002,
-          "display": "Headache (finding)"
+          "system": "ICD-10",
+          "code": "R51",
+          "display": "Headache"
         }
       ],
       "direct_transition": "Hemoptysis End"
@@ -51,9 +51,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 49727002,
-          "display": "Cough (finding)"
+          "system": "ICD-10",
+          "code": "R05",
+          "display": "Cough"
         }
       ],
       "direct_transition": "Diarrhea End"
@@ -62,20 +62,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 267102003,
-          "display": "Sore throat symptom (finding)"
-        }
-      ],
-      "direct_transition": "Sputum Production End"
-    },
-    "Sputum Production End": {
-      "type": "ConditionEnd",
-      "codes": [
-        {
-          "system": "SNOMED-CT",
-          "code": 248595008,
-          "display": "Sputum finding (finding)"
+          "system": "ICD-10",
+          "code": "J029",
+          "display": "Acute pharyngitis, unspecified"
         }
       ],
       "direct_transition": "Vomiting End"
@@ -84,9 +73,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 84229001,
-          "display": "Fatigue (finding)"
+          "system": "ICD-10",
+          "code": "R5383",
+          "display": "Other fatigue"
         }
       ],
       "direct_transition": "Fever End"
@@ -95,9 +84,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 66857006,
-          "display": "Hemoptysis (finding)"
+          "system": "ICD-10",
+          "code": "R042",
+          "display": "Hemoptysis"
         }
       ],
       "direct_transition": "Joint Pain End"
@@ -106,9 +95,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 267036007,
-          "display": "Dyspnea (finding)"
+          "system": "ICD-10",
+          "code": "R0600",
+          "display": "Dyspnea, unspecified"
         }
       ],
       "direct_transition": "Wheezing End"
@@ -117,9 +106,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 422587007,
-          "display": "Nausea (finding)"
+          "system": "ICD-10",
+          "code": "R110",
+          "display": "Nausea"
         }
       ],
       "direct_transition": "Shortness of Breath End"
@@ -128,9 +117,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 249497008,
-          "display": "Vomiting symptom (finding)"
+          "system": "ICD-10",
+          "code": "R1110",
+          "display": "Vomiting, unspecified"
         }
       ],
       "direct_transition": "Loss of Taste End"
@@ -139,9 +128,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 267060006,
-          "display": "Diarrhea symptom (finding)"
+          "system": "ICD-10",
+          "code": "R197",
+          "display": "Diarrhea, unspecified"
         }
       ],
       "direct_transition": "Fatigue End"
@@ -150,9 +139,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 68962001,
-          "display": "Muscle pain (finding)"
+          "system": "ICD-10",
+          "code": "M7910",
+          "display": "Myalgia, unspecified site"
         }
       ],
       "direct_transition": "Nasal Congestion End"
@@ -161,9 +150,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 57676002,
-          "display": "Joint pain (finding)"
+          "system": "ICD-10",
+          "code": "M2550",
+          "display": "Pain in unspecified joint"
         }
       ],
       "direct_transition": "Muscle Pain End"
@@ -172,9 +161,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 43724002,
-          "display": "Chill (finding)"
+          "system": "ICD-10",
+          "code": "R6883",
+          "display": "Chills (without fever)"
         }
       ],
       "direct_transition": "Conjunctival Congestion End"
@@ -183,9 +172,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 386661006,
-          "display": "Fever (finding)"
+          "system": "ICD-10",
+          "code": "R509",
+          "display": "Fever, unspecified"
         }
       ],
       "direct_transition": "Headache End"
@@ -195,9 +184,9 @@
       "direct_transition": "Terminal",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 36955009,
-          "display": "Loss of taste (finding)"
+          "system": "ICD-10",
+          "code": "R432",
+          "display": "Parageusia"
         }
       ]
     },
@@ -205,9 +194,9 @@
       "type": "ConditionEnd",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 56018004,
-          "display": "Wheezing (finding)"
+          "system": "ICD-10",
+          "code": "R062",
+          "display": "Wheezing"
         }
       ],
       "direct_transition": "Sore Throat End"

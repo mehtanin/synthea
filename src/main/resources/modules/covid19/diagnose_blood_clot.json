@@ -81,9 +81,9 @@
       "assign_to_attribute": "covid19_clot",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 706870000,
-          "display": "Acute pulmonary embolism (disorder)"
+          "system": "ICD-10",
+          "code": "I2699",
+          "display": "Other pulmonary embolism without acute cor pulmonale"
         }
       ],
       "direct_transition": "Diagnosed Clots"
@@ -93,9 +93,9 @@
       "assign_to_attribute": "covid19_clot",
       "codes": [
         {
-          "system": "SNOMED-CT",
-          "code": 132281000119108,
-          "display": "Acute deep venous thrombosis (disorder)"
+          "system": "ICD-10",
+          "code": "I8290",
+          "display": "Acute embolism and thrombosis of unspecified vein"
         }
       ],
       "direct_transition": "Diagnosed Clots"
