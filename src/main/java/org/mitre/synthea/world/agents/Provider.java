@@ -553,7 +553,7 @@ public class Provider implements QuadTreeElement, Serializable {
       QuestionnaireResponseItemComponent item = new QuestionnaireResponseItemComponent();
       QuestionnaireResponseItemAnswerComponent answer = new QuestionnaireResponseItemAnswerComponent();
       Random rand = new Random();
-      int randomNum = rand.nextInt((3) + 1);
+      int randomNum = rand.nextInt((q.scales.size() - 1) + 1);
       String[] answerOptions = (String[]) q.scales.toArray(new String[q.scales.size()]);
       String[] answerValue = answerOptions[randomNum].split("=");
       answer.setId(answerValue[0].trim());
