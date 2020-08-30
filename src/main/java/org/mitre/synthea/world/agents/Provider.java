@@ -350,10 +350,17 @@ public class Provider implements QuadTreeElement, Serializable {
     }
   }
 
-  public static void loadQuestionnaire(Location location, long QuestionnaireResponseCount) {
+  /**
+   * Load into cache the list of questionnaires.
+   * 
+   * @param questionnaireResponseCount the number of questionnaireResponses being
+   *                                   loaded.
+   */
+  public static void loadQuestionnaire(Location location, long questionnaireResponseCount) {
     try {
+      // read questionnaires file location from Config
       String questionnaireFile = Config.get("generate.providers.questionnaires.default_file");
-      loadQuestionnaire(location, questionnaireFile, QuestionnaireResponseCount);
+      loadQuestionnaire(location, questionnaireFile, questionnaireResponseCount);
     } catch (IOException e) {
       System.err.println("ERROR: unable to load questionnaire for state: " + location.state);
       e.printStackTrace();
@@ -431,7 +438,16 @@ public class Provider implements QuadTreeElement, Serializable {
     }
   }
 
-  public static void loadQuestionnaire(Location location, String filename, long QuestionnaireResponseCount)
+  /**
+   * Read the questionnaires from the given resource file
+   * 
+   * @param location                   the state being loaded
+   * @param filename                   Location of the file, relative to
+   *                                   src/main/resources
+   * @param questionnaireResponseCount Number of questionnaireResponse to load
+   * @throws IOException if the file cannot be read
+   */
+  public static void loadQuestionnaire(Location location, String filename, long questionnaireResponseCount)
       throws IOException {
 
     String resource = Utilities.readResource(filename);
@@ -440,7 +456,7 @@ public class Provider implements QuadTreeElement, Serializable {
     while (csv.hasNext()) {
       Map<String, String> row = csv.next();
       Questionnaire parsed = csvLineToQuestionnaire(row);
-      if (count < QuestionnaireResponseCount) {
+      if (count < questionnaireResponseCount) {
         questionnaireList.add(parsed);
       }
       count++;
@@ -537,6 +553,14 @@ public class Provider implements QuadTreeElement, Serializable {
     return doc;
   }
 
+  /**
+   * Generate QustionnaireResponse based on Questionnaires loaded.
+   * 
+   * @param person    - the person object.
+   * @param provider  - generated provider.
+   * @param encounter - encounter attributes.
+   * @return A QuestionnaireResponse with the answers.
+   */
   public QuestionnaireResponse getQuestionnaireresponse(Person person, Provider provider, Encounter encounter) {
     List<Questionnaire> qList = getQuestionnaireList();
     QuestionnaireResponse qResponse = new QuestionnaireResponse();
@@ -610,11 +634,14 @@ public class Provider implements QuadTreeElement, Serializable {
     return d;
   }
 
+  /**
+   * Given a line of parsed CSV input, convert the data into a Questionnaire.
+   * 
+   * @param line - read a csv line to a Questionnaire's attributes
+   * @return A Questionnaire.
+   */
   private static Questionnaire csvLineToQuestionnaire(Map<String, String> line) {
     Questionnaire d = new Questionnaire();
-    // using remove instead of get here so that we can iterate over the remaining
-    // keys later
-
     d.id = (String) line.values().toArray()[0];
     d.category = line.get("Category");
     d.subCategory = line.get("Subcategory");

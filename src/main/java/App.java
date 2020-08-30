@@ -24,6 +24,7 @@ public class App {
     System.out.println("Options: [-s seed] [-cs clinicianSeed] [-p populationSize]");
     System.out.println("         [-r referenceDate as YYYYMMDD]");
     System.out.println("         [-g gender] [-a minAge-maxAge]");
+    System.out.println("         [-qr questionnaireResponseCount]");
     System.out.println("         [-o overflowPopulation]");
     System.out.println("         [-m moduleFileWildcardList]");
     System.out.println("         [-c localConfigFilePath]");
@@ -38,6 +39,7 @@ public class App {
     System.out.println("run_synthea Alaska Juneau");
     System.out.println("run_synthea -s 12345");
     System.out.println("run_synthea -p 1000)");
+    System.out.println("run_synthea -qr 5");
     System.out.println("run_synthea -s 987 Washington Seattle");
     System.out.println("run_synthea -s 21 -p 100 Utah \"Salt Lake City\"");
     System.out.println("run_synthea -g M -a 60-65");
@@ -81,7 +83,7 @@ public class App {
           } else if (currArg.equalsIgnoreCase("-p")) {
             String value = argsQ.poll();
             options.population = Integer.parseInt(value);
-          } else if (currArg.equalsIgnoreCase("-qr")) {
+          } else if (currArg.equalsIgnoreCase("-qr")) { // QuestionnaireResponse argument
             String value = argsQ.poll();
             options.questionnaireResponses = Integer.parseInt(value);
           } else if (currArg.equalsIgnoreCase("-o")) {

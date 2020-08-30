@@ -242,7 +242,7 @@ public class Generator {
 
     // initialize hospitals
     Provider.loadProviders(location, options.clinicianSeed);
-    // initialize questionnaire
+    // initialize questionnaires
     Provider.loadQuestionnaire(location, options.questionnaireResponses);
     // Initialize Payers
     Payer.loadPayers(location);

@@ -1326,6 +1326,17 @@ public class FhirR4 {
     return allergyEntry;
   }
 
+  /**
+   * Map the Questionnaires into QuestionnaireResponse resource, and add it to the
+   * given Bundle.
+   *
+   * @param personEntry           The Entry for the Person
+   * @param bundle                The Bundle to add to
+   * @param encounterEntry        The current Encounter entry
+   * @param questionnaireResponse The questionnaireResponse Entry
+   * @param encounter             The encounter
+   * @return The added Entry
+   */
   private static BundleEntryComponent questionnaireResponse(BundleEntryComponent personEntry, Bundle bundle,
       BundleEntryComponent encounterEntry, QuestionnaireResponse questionnaireResponse, Encounter encounter) {
 
