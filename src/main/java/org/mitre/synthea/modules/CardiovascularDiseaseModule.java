@@ -779,7 +779,7 @@ public final class CardiovascularDiseaseModule extends Module {
   private static void beginOrContinueEmergency(Person person, long time, Code code) {
     if (!person.attributes.containsKey(CVD_ENCOUNTER)) {
       Encounter encounter = EncounterModule.createEncounter(person, time, EncounterType.EMERGENCY,
-          ClinicianSpecialty.GENERAL_PRACTICE, code, person);
+          ClinicianSpecialty.GENERAL_PRACTICE, code);
       person.attributes.put(CVD_ENCOUNTER, encounter);
     }
   }
