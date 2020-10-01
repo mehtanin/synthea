@@ -39,7 +39,6 @@ import org.mitre.synthea.world.geography.Demographics;
 import org.mitre.synthea.world.geography.Location;
 import org.mitre.synthea.world.geography.quadtree.QuadTree;
 import org.mitre.synthea.world.geography.quadtree.QuadTreeElement;
-import org.hl7.fhir.QuestionnaireStatus;
 import org.hl7.fhir.r4.model.QuestionnaireResponse;
 import org.hl7.fhir.r4.model.Reference;
 import org.hl7.fhir.r4.model.StringType;
